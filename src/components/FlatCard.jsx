@@ -1,0 +1,38 @@
+import { StyleSheet, Text, View } from 'react-native'
+import { colors } from '../global/colors'
+
+
+const FlatCard = ({children}) => {
+  return (
+    <View style={styles.container}>
+      {children}
+    </View>
+  )
+}
+
+export default FlatCard
+
+const styles = StyleSheet.create({
+    container:{
+        justifyContent:"flex-start",
+       alignItems:"center",
+       gap:8,
+        flexDirection:"row",
+          backgroundColor: colors.mediumGray,
+        height:64,
+        margin:8,
+        elevation:10,
+        paddingVertical: 8,
+        paddingHorizontal: 16,
+        borderWidth: 2,
+        borderTopColor: "#FFFFFF",   
+        borderLeftColor: "#FFFFFF",  
+        borderBottomColor: "#808080", 
+        borderRightColor: "#808080",  
+        shadowColor: "#000",
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 1,
+        elevation: 4
+    }
+})
