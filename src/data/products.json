@@ -7,7 +7,7 @@
         "price": 1200000,
         "stock": 0,
         "brand": "Sony",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 0,
         "tags": ["new", "ofert"],
         "mainImage": "https://i.postimg.cc/wM7dDrvG/ps5.png"
@@ -20,7 +20,7 @@
         "price": 900000,
         "stock": 30,
         "brand": "Sony",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 5,
         "tags": ["popular", "classic","discounts"],
         "mainImage": "https://i.postimg.cc/mgmZ1KT7/ps4.png"
@@ -33,7 +33,7 @@
         "price": 500000,
         "stock": 40,
         "brand": "Sony",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 10,
         "tags": ["classic", "retro"],
         "mainImage": "https://i.postimg.cc/fRzTLMQw/ps3.png"
@@ -46,7 +46,7 @@
         "price": 200000,
         "stock": 10,
         "brand": "Sony",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 20,
         "tags": ["retro", "vintage"],
         "mainImage": "https://i.postimg.cc/sD9gsv86/ps2.png"
@@ -59,7 +59,7 @@
         "price": 150000,
         "stock": 5,
         "brand": "Sony",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 25,
         "tags": ["vintage", "collector"],
         "mainImage": "https://i.postimg.cc/XN5v12g0/ps1.png"
@@ -72,7 +72,7 @@
         "price": 180000,
         "stock": 15,
         "brand": "Microsoft",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 15,
         "tags": ["classic", "retro"],
         "mainImage": "https://i.postimg.cc/SKKsZkgZ/xbox1.png"
@@ -85,7 +85,7 @@
         "price": 400000,
         "stock": 20,
         "brand": "Microsoft",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 10,
         "tags": ["classic", "popular"],
         "mainImage": "https://i.postimg.cc/xTS1wKsN/xbox360.png"
@@ -98,7 +98,7 @@
         "price": 700000,
         "stock": 35,
         "brand": "Microsoft",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 5,
         "tags": ["modern", "new"],
         "mainImage": "https://i.postimg.cc/MH1KcTGG/xboxone.png"
@@ -111,7 +111,7 @@
         "price": 1300000,
         "stock": 18,
         "brand": "Microsoft",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 0,
         "tags": ["next-gen", "new"],
         "mainImage": "https://i.postimg.cc/ydgNHn4c/xboxx.png"
@@ -124,7 +124,7 @@
         "price": 300000,
         "stock": 25,
         "brand": "Nintendo",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 10,
         "tags": ["popular", "family"],
         "mainImage": "https://i.postimg.cc/FRMHscNq/wii.png"
@@ -150,7 +150,7 @@
         "price": 100000,
         "stock": 12,
         "brand": "Sega",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 30,
         "tags": ["retro", "collector"],
         "mainImage": "https://i.postimg.cc/g2sjqnHX/segagenesis.png"
@@ -163,7 +163,7 @@
         "price": 50000,
         "stock": 50,
         "brand": "Clónica",
-        "category": "consolas",
+        "category": "vestidos",
         "discount": 40,
         "tags": ["retro", "nostalgic"],
         "mainImage": "https://i.postimg.cc/g2mrZv8b/familygame.png"
