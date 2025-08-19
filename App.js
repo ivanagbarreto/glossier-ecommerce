@@ -1,12 +1,21 @@
 import { StatusBar } from "expo-status-bar";
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
 import { StyleSheet, ImageBackground, View } from "react-native";
 import Header from "./src/components/Header";
 import Categories from "./src/screens/Categories";
 import Products from "./src/screens/Products";
 import { useState } from "react";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
+    const [loaded, error] = useFonts({
+    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
+  });
+
+
   return (
     <ImageBackground
       source={require("./assets/background.jpeg")}
