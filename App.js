@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [selectedCategory, setSelectedCategory] = useState("vestidos");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [loaded, error] = useFonts({
     "RobotoCondensed-Bold": require("./assets/fonts/RobotoCondensed-Bold.ttf"),
     "RobotoCondensed-Italic": require("./assets/fonts/RobotoCondensed-Italic.ttf"),
