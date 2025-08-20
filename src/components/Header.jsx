@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import { colors } from "../global/colors";
+import RobotoCondensedText from "./RobotoCondensedFont";
 
 const Header = ({ title, subtitle }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
+      <RobotoCondensedText style={styles.subtitle}>{subtitle}</RobotoCondensedText>
     </View>
   );
 };

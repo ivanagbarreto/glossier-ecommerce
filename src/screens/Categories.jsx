@@ -9,6 +9,7 @@ import {
 import productCategories from "../data/productCategories.json";
 import FlatCard from "../components/FlatCard";
 import { categoryImages } from "../constants/categoryImages";
+import RobotoCondensedText from "../components/RobotoCondensedFont";
 
 const Categories = ({setSelectedCategory}) => {
   const renderCategoryItem = ({ item }) => {
@@ -22,7 +23,7 @@ const Categories = ({setSelectedCategory}) => {
             source={categoryImages[item.image]}
             resizeMode="contain"
           />
-          <Text style={styles.itemTitle}> {item.title}</Text>
+          <RobotoCondensedText style={styles.itemTitle}> {item.title}</RobotoCondensedText>
         </FlatCard>
       </View>
     </Pressable>
@@ -42,7 +43,5 @@ const styles = StyleSheet.create({
   itemContainer: {
     padding: 2,
   },
-  itemTitle:{
-  fontFamily: "RobotoCondensed-Regular",
-  }
+ 
 });
