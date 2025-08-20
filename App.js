@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("vestidos");
   const [loaded, error] = useFonts({
     "RobotoCondensed-Bold": require("./assets/fonts/RobotoCondensed-Bold.ttf"),
     "RobotoCondensed-Italic": require("./assets/fonts/RobotoCondensed-Italic.ttf"),
@@ -18,13 +18,13 @@ export default function App() {
     "RobotoCondensed-Regular": require("./assets/fonts/RobotoCondensed-Regular.ttf"),
     "PressStart2P-Regular": require("./assets/fonts/PressStart2P-Regular.ttf"),
   });
-    useEffect(() => {
+  useEffect(() => {
     if (loaded || error) {
       SplashScreen.hideAsync();
     }
   }, [loaded, error]);
 
-    if (!loaded && !error) {
+  if (!loaded && !error) {
     return null;
   }
   return (
