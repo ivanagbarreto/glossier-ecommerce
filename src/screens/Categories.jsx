@@ -22,7 +22,7 @@ const Categories = ({setSelectedCategory}) => {
             source={categoryImages[item.image]}
             resizeMode="contain"
           />
-          <Text> {item.title}</Text>
+          <Text style={styles.itemTitle}> {item.title}</Text>
         </FlatCard>
       </View>
     </Pressable>
@@ -42,4 +42,7 @@ const styles = StyleSheet.create({
   itemContainer: {
     padding: 2,
   },
+  itemTitle:{
+  fontFamily: "RobotoCondensed-Regular",
+  }
 });

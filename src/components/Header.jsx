@@ -22,6 +22,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     color: colors.darkGray,
+    fontFamily: "PressStart2P-Regular",
+    textTransform: "uppercase",
+    color: "#fff", 
+    textShadowColor: "#000",   
+    textShadowOffset: { width: 2, height: 1 },
+    textShadowRadius: 1,
+    
   },
   subtitle: {
     fontSize: 14,
