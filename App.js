@@ -3,8 +3,7 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { StyleSheet, ImageBackground, View } from "react-native";
 import Header from "./src/components/Header";
-import Categories from "./src/screens/Categories";
-import Products from "./src/screens/Products";
+import { Categories, Products, ProductDetail} from './src/screens'
 import { useState, useEffect } from "react";
 
 SplashScreen.preventAutoHideAsync();

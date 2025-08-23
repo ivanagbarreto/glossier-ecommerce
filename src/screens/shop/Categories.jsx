@@ -6,10 +6,12 @@ import {
   FlatList,
   Pressable,
 } from "react-native";
-import productCategories from "../data/productCategories.json";
-import FlatCard from "../components/FlatCard";
-import { categoryImages } from "../constants/categoryImages";
-import RobotoCondensedText from "../components/RobotoCondensedFont";
+
+import productCategories from "../../data/productCategories.json";
+import FlatCard from "../../components/FlatCard";
+import { categoryImages } from "../../constants/categoryImages";
+
+import RobotoCondensedText from "../../components/RobotoCondensedFont";
 
 const Categories = ({setSelectedCategory}) => {
   const renderCategoryItem = ({ item }) => {
@@ -19,7 +21,7 @@ const Categories = ({setSelectedCategory}) => {
       <View style={styles.itemContainer}>
         <FlatCard>
           <Image
-            style={{ width: 40, height: 40 }}
+            style={{ width: 25, height: 25 }}
             source={categoryImages[item.image]}
             resizeMode="contain"
           />
@@ -41,7 +43,7 @@ export default Categories;
 
 const styles = StyleSheet.create({
   itemContainer: {
-    padding: 2,
+    padding: 1,
   },
  
 });

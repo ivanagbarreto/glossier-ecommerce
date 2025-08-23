@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Play Station 5",
+        "title": "Vestido HALTER",
         "shortDescription": "Explora las increíbles posibilidades de juego con la consola PS5®, que superan lo extraordinario.",
         "longDescription": "Disfruta de tiempos de carga superveloces con un SSD de velocidad ultrarrápida, una experiencia más inmersiva gracias a la compatibilidad con respuesta háptica, gatillos adaptativos y audio 3D, además de toda una increíble colección de juegos de PlayStation.",
         "price": 1200000,
@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "title": "Play Station 4",
+        "title": "Vestido BORDADO",
         "shortDescription": "Juegos increíbles y entretenimiento sin fin con PS4.",
         "longDescription": "La PlayStation 4 ofrece gráficos espectaculares, experiencias de juego inmersivas y una amplia colección de juegos para todos los gustos.",
         "price": 900000,
@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "title": "Play Station 3",
+        "title": "Vestido MIDI",
         "shortDescription": "Revive los clásicos con la PS3.",
         "longDescription": "La PlayStation 3 sigue siendo una consola muy apreciada, con juegos icónicos y compatibilidad con Blu-ray para entretenimiento multimedia.",
         "price": 500000,
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "title": "Play Station 2",
+        "title": "Vestido PUNTO",
         "shortDescription": "La consola más vendida de todos los tiempos.",
         "longDescription": "La PlayStation 2 marcó una era en la historia de los videojuegos con una biblioteca inmensa y juegos legendarios.",
         "price": 200000,
@@ -53,7 +53,7 @@
     },
     {
         "id": 5,
-        "title": "Play Station 1",
+        "title": "Vestido CORTO",
         "shortDescription": "La consola que lo inició todo.",
         "longDescription": "La primera PlayStation revolucionó la industria del videojuego con gráficos 3D y una increíble gama de juegos clásicos.",
         "price": 150000,
@@ -66,7 +66,7 @@
     },
     {
         "id": 6,
-        "title": "Xbox",
+        "title": "Vestido LENCERO",
         "shortDescription": "La primera consola de Microsoft.",
         "longDescription": "La Xbox original llevó los videojuegos a nuevas alturas con su potente hardware y un catálogo de juegos memorables.",
         "price": 180000,
@@ -79,7 +79,7 @@
     },
     {
         "id": 7,
-        "title": "Xbox 360",
+        "title": "Vestido DRAPEADO",
         "shortDescription": "La Xbox 360 definió una generación.",
         "longDescription": "Con gráficos en alta definición y un gran catálogo de juegos, la Xbox 360 es una consola clásica para todos los gamers.",
         "price": 400000,
@@ -92,7 +92,7 @@
     },
     {
         "id": 8,
-        "title": "Xbox One",
+        "title": "Vestido CAMISERO",
         "shortDescription": "Más que una consola, un centro de entretenimiento.",
         "longDescription": "La Xbox One combina videojuegos y entretenimiento en una plataforma completa para toda la familia.",
         "price": 700000,
@@ -105,7 +105,7 @@
     },
     {
         "id": 9,
-        "title": "Xbox Series X",
+        "title": "Vestido TERCIOPELO",
         "shortDescription": "La consola más poderosa de Microsoft.",
         "longDescription": "Con rendimiento de última generación, la Xbox Series X redefine los estándares de gráficos y velocidad en los videojuegos.",
         "price": 1300000,
@@ -118,7 +118,7 @@
     },
     {
         "id": 10,
-        "title": "Nintendo Wii",
+        "title": "Vestido ESTAMPADO",
         "shortDescription": "Una nueva forma de jugar.",
         "longDescription": "La Nintendo Wii introdujo controles de movimiento y una experiencia de juego única que sigue siendo amada por jugadores de todas las edades.",
         "price": 300000,
@@ -144,7 +144,7 @@
     },
     {
         "id": 12,
-        "title": "Sega Genesis",
+        "title": "Vestido TIRANTES",
         "shortDescription": "La consola retro que cambió la industria.",
         "longDescription": "La Sega Genesis es una leyenda en el mundo de los videojuegos, con títulos que definieron los 90s.",
         "price": 100000,
@@ -157,7 +157,7 @@
     },
     {
         "id": 13,
-        "title": "Family Game",
+        "title": "Vestido SATINADO",
         "shortDescription": "El clásico Family Game de 8 bits.",
         "longDescription": "Revive la nostalgia con el Family Game, una consola icónica para generaciones de jugadores.",
         "price": 50000,

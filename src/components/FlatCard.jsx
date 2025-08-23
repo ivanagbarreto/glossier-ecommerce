@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
     container:{
         justifyContent:"flex-start",
        alignItems:"center",
-       gap:4,
+       gap:2,
         flexDirection:"row",
-          backgroundColor: colors.mediumGray,
+          backgroundColor: colors.white,
         height:88,
         marginHorizontal: 24,
         marginBottom: 7, 
