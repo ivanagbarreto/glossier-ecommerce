@@ -6,25 +6,22 @@ const Stack = createNativeStackNavigator();
 
 const ShopStackNavigator = () => {
   return (
-    <Stack.Navigator 
-        initialRouteName="Categorias"
-                    screenOptions={{
-                headerStyle:{
-                        backgroundColor:colors.lightPink
-                },
-                headerTitleStyle:{
-                        fontFamily:"PressStart2P-Regular",
-                       
-                        fontSize: 12,
-                         textTransform: 'uppercase'
-                }
-            }
-
-            }
+    <Stack.Navigator
+      initialRouteName="Categorias"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: colors.lightPink,
+        },
+        headerTitleStyle: {
+          fontFamily: "PressStart2P-Regular",
+          fontSize: 12,
+          textTransform: "uppercase",
+        },
+      }}
     >
-      <Stack.Screen name="Categorias" component={Categories} />
-      <Stack.Screen name="Productos" component={Products} />
-      <Stack.Screen name="ProductoDetail" component={ProductDetail} />
+      <Stack.Screen name="Categorias" component={Categories}  options={{ title: "Categorias".toUpperCase() }}/>
+      <Stack.Screen name="Productos" component={Products}  options={{ title: "Categorias".toUpperCase() }}/>
+      <Stack.Screen name="ProductoDetail" component={ProductDetail} options={{ title: "Categorias".toUpperCase() }} />
     </Stack.Navigator>
   );
 };

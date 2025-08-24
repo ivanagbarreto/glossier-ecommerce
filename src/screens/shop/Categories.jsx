@@ -20,7 +20,7 @@ const Categories = ({navigation}) => {
     return(
 
     <Pressable onPress={()=> navigation.navigate("Productos",{category:item.title})}>
-      <View style={styles.itemContainer}>
+      <View >
         <FlatCard style={styles.container}>
           <Image
             style={{ width: 25, height: 25 }}
