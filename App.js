@@ -4,8 +4,9 @@ import * as SplashScreen from "expo-splash-screen";
 import { StyleSheet, ImageBackground, View } from "react-native";
 import Header from "./src/components/Header";
 import { useState, useEffect } from "react";
-import ShopStackNavigator from "./src/navigation/shop/ShopStackNavigator";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, TabActions } from "@react-navigation/native";
+import TabsNavigator from "./src/navigation/tabs/TabsNavigator";
+import { colors } from "./src/global/colors";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -33,8 +34,9 @@ export default function App() {
         style={styles.container}
         resizeMode="cover"
       >
-        <StatusBar style="light" />
-        <ShopStackNavigator />
+        <StatusBar  backgroundColor={colors.lightPink}/>
+
+        <TabsNavigator />
       </ImageBackground>
     </NavigationContainer>
   );
