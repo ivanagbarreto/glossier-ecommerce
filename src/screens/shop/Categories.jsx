@@ -5,6 +5,7 @@ import {
   Image,
   FlatList,
   Pressable,
+  ImageBackground,
 } from "react-native";
 
 import productCategories from "../../data/productCategories.json";
@@ -13,11 +14,11 @@ import { categoryImages } from "../../constants/categoryImages";
 
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
 
-const Categories = ({setSelectedCategory}) => {
+const Categories = ({navigation}) => {
   const renderCategoryItem = ({ item }) => {
     return(
 
-    <Pressable onPress={()=> setSelectedCategory(item.title)}>
+    <Pressable onPress={()=> navigation.navigate("Productos",{category:item.title})}>
       <View style={styles.itemContainer}>
         <FlatCard>
           <Image
@@ -31,11 +32,17 @@ const Categories = ({setSelectedCategory}) => {
     </Pressable>
   )};
   return (
+    <ImageBackground
+            source={require("../../../assets/background.jpeg")}
+            style={styles.container}
+            resizeMode="cover"
+          >
     <FlatList
       data={productCategories}
       renderItem={renderCategoryItem}
       keyExtractor={(item) => item.id}
     />
+    </ImageBackground>
   );
 };
 

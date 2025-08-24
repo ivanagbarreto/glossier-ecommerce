@@ -3,13 +3,13 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { StyleSheet, ImageBackground, View } from "react-native";
 import Header from "./src/components/Header";
-import { Categories, Products, ProductDetail} from './src/screens'
 import { useState, useEffect } from "react";
+import ShopStackNavigator from "./src/navigation/shop/ShopStackNavigator";
+import { NavigationContainer } from "@react-navigation/native";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [selectedCategory, setSelectedCategory] = useState("");
   const [loaded, error] = useFonts({
     "RobotoCondensed-Bold": require("./assets/fonts/RobotoCondensed-Bold.ttf"),
     "RobotoCondensed-Italic": require("./assets/fonts/RobotoCondensed-Italic.ttf"),
@@ -27,26 +27,16 @@ export default function App() {
     return null;
   }
   return (
-    <ImageBackground
-      source={require("./assets/background.jpeg")}
-      style={styles.container}
-      resizeMode="cover"
-    >
-      <StatusBar style="light" />
-      {selectedCategory ? (
-        <>
-          <Header title="Fashion" subtitle="Productos" />
-          <Products category={selectedCategory} />
-        </>
-      ) : (
-        <>
-          <Header title="Fashion" subtitle="Categorias" />
-          <View style={{ flex: 1 }}>
-            <Categories setSelectedCategory={setSelectedCategory} />
-          </View>
-        </>
-      )}
-    </ImageBackground>
+    <NavigationContainer>
+      <ImageBackground
+        source={require("./assets/background.jpeg")}
+        style={styles.container}
+        resizeMode="cover"
+      >
+        <StatusBar style="light" />
+        <ShopStackNavigator />
+      </ImageBackground>
+    </NavigationContainer>
   );
 }
 

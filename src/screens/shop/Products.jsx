@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
-
 import products from "../../data/products.json";
 import { useEffect, useState } from "react";
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
-import Search from "../../components/Search"
-const Products = ({ category }) => {
+import Search from "../../components/Search";
+const Products = ({ route }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [keyword, setKeyword] = useState("");
 
+  const {category} = route.params
   useEffect(() => {
     const categoryProducts = products.filter(
       (product) => product.category.toLowerCase() === category.toLowerCase()
@@ -20,7 +20,6 @@ const Products = ({ category }) => {
     } else {
       setFilteredProducts(categoryProducts);
     }
-    
   }, [category, keyword]);
 
   return (
@@ -30,7 +29,7 @@ const Products = ({ category }) => {
         data={filteredProducts}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <RobotoCondensedText >{item.title}</RobotoCondensedText>
+          <RobotoCondensedText>{item.title}</RobotoCondensedText>
         )}
       />
     </View>
@@ -39,7 +38,4 @@ const Products = ({ category }) => {
 
 export default Products;
 
-const styles = StyleSheet.create({
-
-  
-});
+const styles = StyleSheet.create({});
