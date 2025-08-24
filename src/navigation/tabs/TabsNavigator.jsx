@@ -14,21 +14,21 @@ const TabsNavigator = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel:false,
-        tabBarStyle:StyleSheet.tabBar
+        tabBarStyle:styles.tabBar
       }}
     >
        <Tab.Screen 
           name="Shop" 
           component={ShopStackNavigator} 
           options={{
-              tabBarIcon:({focused})=>(<Icon name="shopping-bag" size={24} color={focused?colors.mediumGray:colors.lightPink}/>)
+              tabBarIcon:({focused})=>(<Icon name="shopping-bag" size={24} color={focused?colors.white:colors.darkGray}/>)
       }}
       />
       <Tab.Screen 
           name="Cart"
           component={CartStackNavigator} 
           options={{
-              tabBarIcon:({focused})=>(<Icon name="shopping-cart" size={24} color={focused?colors.mediumGray:colors.lightPink}/>)
+              tabBarIcon:({focused})=>(<Icon name="shopping-cart" size={24} color={focused?colors.white:colors.darkGray}/>)
       }}/>
     </Tab.Navigator>
   );
@@ -38,7 +38,7 @@ export default TabsNavigator;
 
 const styles = StyleSheet.create({
     tabBar:{
-
+      backgroundColor:colors.mediumGray,
     }
 
 })
