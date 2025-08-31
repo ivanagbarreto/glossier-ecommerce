@@ -22,11 +22,15 @@ const cartSlice = createSlice ({
         }
         state.updatedAt= new Date().toLocaleString();
         state.total = state.cartItems.reduce((acc,item)=> acc + item.price*item.quantity, 0)
-      }
-      
+      },
+       removeItems : (state,action)=>{
+             state.cartItems= state.cartItems.filter(item=>item.id!==action.payload)
+             state.total = state.cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+             state.updatedAt = new Date().toLocaleString();
+        }
     }
 })
 
-export const {addItemToCart} = cartSlice.actions
+export const {addItemToCart, removeItems} = cartSlice.actions
 
 export default cartSlice.reducer
