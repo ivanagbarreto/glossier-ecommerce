@@ -12,7 +12,9 @@ const ShopStackNavigator = () => {
     <Stack.Navigator
       initialRouteName="Categorias"
       screenOptions={{
-        header:({route})=>(<Header title="fashion" subtitle={selectedCategory}/>)
+        header: ({route})=>(<Header title="fashion" 
+          subtitle={route.name==="Categorias"?"Home": selectedCategory}
+          />)
       }}
     >
       <Stack.Screen name="Categorias" component={Categories}  options={{ title: "Categorias".toUpperCase() }}/>
