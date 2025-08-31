@@ -3,11 +3,14 @@ import products from "../../data/products.json";
 import { useEffect, useState } from "react";
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
 import Search from "../../components/Search";
+import { useSelector } from "react-redux";
 
 const Products = ({ navigation, route }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [keyword, setKeyword] = useState("");
-  const { category } = route.params;
+  //const { category } = route.params;
+  const category = useSelector(state => state.shopReducer.selectedCategory)
+
   const renderProductItem = ({ item }) => (
     <View>
       <Pressable onPress={() => navigation.navigate("ProductoDetail")}>

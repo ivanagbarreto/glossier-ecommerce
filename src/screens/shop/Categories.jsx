@@ -9,17 +9,31 @@ import {
 
 } from "react-native";
 
-import productCategories from "../../data/productCategories.json";
+//import productCategories from "../../data/productCategories.json";
+
 import FlatCard from "../../components/FlatCard";
 import { categoryImages } from "../../constants/categoryImages";
 import { colors } from "../../global/colors";
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
 import Icon from "react-native-vector-icons/Feather";
+import { useSelector, useDispatch } from "react-redux";
+import { setSelectedCategory } from "../../store/slices/shopSlice";
+
 const Categories = ({navigation}) => {
+    const  productCategories = useSelector (state =>state.shopReducer.productCategories)
+
+    const dispatch = useDispatch ()
+
+    const handleSelectCategory =(category)=>{
+        dispatch(setSelectedCategory(category))
+        navigation.navigate("Productos")
+    }
+
+
   const renderCategoryItem = ({ item }) => {
     return(
 
-    <Pressable onPress={()=> navigation.navigate("Productos",{category:item.title})}>
+    <Pressable onPress={()=>handleSelectCategory(item.title)}>
       <View >
         <FlatCard style={styles.container}>
           <Image
