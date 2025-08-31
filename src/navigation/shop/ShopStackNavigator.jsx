@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Categories, Products, ProductDetail } from "../../screens";
 import { colors } from "../../global/colors";
+import Header from "../../components/Header";
 
 const Stack = createNativeStackNavigator();
 
@@ -9,14 +10,7 @@ const ShopStackNavigator = () => {
     <Stack.Navigator
       initialRouteName="Categorias"
       screenOptions={{
-        headerStyle: {
-          backgroundColor: colors.lightPink,
-        },
-        headerTitleStyle: {
-          fontFamily: "PressStart2P-Regular",
-          fontSize: 12,
-          textTransform: "uppercase",
-        },
+        header:({route})=>(<Header title="fashion" subtitle={route.name}/>)
       }}
     >
       <Stack.Screen name="Categorias" component={Categories}  options={{ title: "Categorias".toUpperCase() }}/>

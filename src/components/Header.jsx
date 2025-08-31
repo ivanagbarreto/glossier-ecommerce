@@ -1,38 +1,49 @@
-import { StyleSheet, Text, View } from "react-native";
-import { colors } from "../global/colors";
-import RobotoCondensedText from "./RobotoCondensedFont";
+import { StyleSheet, Text, View, Pressable } from 'react-native'
+import {colors} from '../global/colors'
+import Icon from 'react-native-vector-icons/Feather'
+import { useNavigation } from '@react-navigation/native'
 
-const Header = ({ title, subtitle }) => {
+const Header = ({title, subtitle}) => {
+  const navigation = useNavigation()
+  const canGoBack = navigation.canGoBack() 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
-      <RobotoCondensedText style={styles.subtitle}>{subtitle}</RobotoCondensedText>
-    </View>
-  );
-};
+      <Text style= {styles.subtitle}>{subtitle}</Text>
+      
+      {
+        canGoBack &&
+        <Pressable style={styles.goBack} onPress={() => navigation.goBack()}>
+          <Icon name="chevron-left" size={32} color={colors.white} />
+        </Pressable>
+      }
+      </View>
+  )
+}
 
-export default Header;
+export default Header
 
 const styles = StyleSheet.create({
-  container: {
-    height: 200,
-    backgroundColor: colors.lightPink,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  title: {
-    fontSize: 24,
-    color: colors.darkGray,
-    fontFamily: "PressStart2P-Regular",
-    textTransform: "uppercase",
-    color: "#fff", 
-    textShadowColor: "#000",   
-    textShadowOffset: { width: 2, height: 1 },
-    textShadowRadius: 1,
-    
-  },
-  subtitle: {
-    fontSize: 14,
-    color: colors.darkGray,
-  },
-});
+
+    container:{
+        backgroundColor: colors.lightPink, 
+        height: 200,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    title:{
+        fontSize:24,
+        color: colors.white,
+        fontFamily:"PressStart2P-Regular"
+    },
+    subtitle:{
+        fontSize:14,
+        color: colors.white,
+        fontFamily:"RobotoCondensed-Regular"
+    },
+      goBack: {
+    position: "absolute",
+    bottom: 100,
+    left: 16
+  }
+})
