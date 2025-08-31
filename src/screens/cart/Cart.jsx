@@ -2,17 +2,17 @@ import { FlatList, StyleSheet, Text, View, Image, Pressable } from 'react-native
 import { colors } from '../../global/colors'
 import FlatCard from '../../components/FlatCard'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { useState } from 'react'
+import { useSelector } from 'react-redux'
 
 
 const Cart = () => {
 
-  const [cartItems, setCartItems] = useState ([])
-
+  const cartItems = useSelector(state=>state.cartReducer.cartItems)
+  const total = useSelector(state=>state.cartReducer.total)
 
   const FooterComponent = () => (
     <View style={styles.footerContainer}>
-      <Text style={styles.footerTotal}>Total: $  </Text>
+      <Text style={styles.footerTotal}>Total: $ {total} </Text>
       <Pressable style={styles.confirmButton}>
         <Text style={styles.confirmButtonText}>Confirmar</Text>
       </Pressable>
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   confirmButton: {
     padding: 8,
     paddingHorizontal: 16,
-    backgroundColor: colors.purple,
+    backgroundColor: colors.lightPink,
     borderRadius: 16,
     marginBottom: 24,
   },
