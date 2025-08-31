@@ -7,6 +7,9 @@ import { useState, useEffect } from "react";
 import { NavigationContainer, TabActions } from "@react-navigation/native";
 import TabsNavigator from "./src/navigation/tabs/TabsNavigator";
 import { colors } from "./src/global/colors";
+import { Provider } from "react-redux";
+import {store} from "./src/store"
+
 
 SplashScreen.preventAutoHideAsync();
 
@@ -28,17 +31,19 @@ export default function App() {
     return null;
   }
   return (
-    <NavigationContainer>
-      <ImageBackground
-        source={require("./assets/background.jpeg")}
-        style={styles.container}
-        resizeMode="cover"
-      >
-        <StatusBar  backgroundColor={colors.lightPink}/>
+    <Provider store={store}>
+      <NavigationContainer>
+        <ImageBackground
+          source={require("./assets/background.jpeg")}
+          style={styles.container}
+          resizeMode="cover"
+        >
+          <StatusBar backgroundColor={colors.lightPink} />
 
-        <TabsNavigator />
-      </ImageBackground>
-    </NavigationContainer>
+          <TabsNavigator />
+        </ImageBackground>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
