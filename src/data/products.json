@@ -49,7 +49,7 @@
         "category": "vestidos",
         "discount": 20,
         "tags": ["retro", "vintage"],
-        "mainImage": "https://i.postimg.cc/sD9gsv86/ps2.png"
+        "mainImage": "https://i.postimg.cc/pdfcM8sn/03486731800-e1.jpg"
     },
     {
         "id": 5,
@@ -266,8 +266,8 @@
         "longDescription": "Cuello solapa y manga larga. Bolsillos en delantero con solapa. Forro interior combinado a tono. Bajo acabado con abertura en espalda. Cierre frontal con botones.",
         "price": 450000,
         "stock": 85,
-        "brand": "Google",
-        "category": "H&M",
+        "brand": "H&M",
+        "category": "abrigos",
         "discount": 10,
         "tags": ["smart-home", "assistant"],
         "mainImage": "https://i.postimg.cc/g0dX9P5s/04341704743-e1.jpg"
@@ -391,16 +391,16 @@
     },
     {
         "id": 31,
-        "title": "Estatuilla de Gandalf El Gris",
-        "shortDescription": "Figura coleccionable de Gandalf en edición limitada.",
-        "longDescription": "Una representación detallada del famoso mago de la saga El Señor de los Anillos, ideal para coleccionistas.",
-        "price": 45000,
+        "title": "JERSEY POLO PUNTO RAYAS",
+        "shortDescription": "Jersey de cuello solapa",
+        "longDescription": "Manga larga y botones delanteros.",
+        "price": 99900,
         "stock": 10,
-        "brand": "Weta Workshop",
+        "brand": "Zara",
         "category": "sweaters",
         "discount": 8,
         "tags": ["lotr", "figure"],
-        "mainImage": "https://i.postimg.cc/DfSGvddC/gandalf.png"
+        "mainImage": "https://i.postimg.cc/gJF9v80M/02142017044-e1.jpg"
     },
     {
         "id": 32,
@@ -417,16 +417,16 @@
     },
     {
         "id": 33,
-        "title": "Lámina Autografiada de Harry Potter",
-        "shortDescription": "Lámina firmada por los actores de la saga Harry Potter.",
-        "longDescription": "Una pieza de colección exclusiva, firmada por Daniel Radcliffe, Emma Watson y Rupert Grint.",
-        "price": 100000,
+        "title": "Chaleco PUNTO CONTRASTE",
+        "shortDescription": "Chaleco confeccionado en tejido de punto. ",
+        "longDescription": "Cuello redondo y manga sisa. Falsos bolsillos de vivo en delantero. Detalle de bandas combinadas a contraste. Cierre frontal con botones a presión.",
+        "price": 79900,
         "stock": 5,
-        "brand": "Harry Potter",
+        "brand": "Zara",
         "category": "sweaters",
         "discount": 20,
         "tags": ["harry-potter", "autograph"],
-        "mainImage": "https://i.postimg.cc/L5g2csPT/harrypotter.png"
+        "mainImage": "https://i.postimg.cc/tTXZCZHc/04192803712-e1.jpg"
     },
     {
         "id": 34,
@@ -436,7 +436,7 @@
         "price": 200000,
         "stock": 50,
         "brand": "Intel",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 5,
         "tags": ["cpu", "high-performance"],
         "mainImage": "https://i.postimg.cc/RFDvptWh/corei9.png"
@@ -449,7 +449,7 @@
         "price": 35000,
         "stock": 25,
         "brand": "Asus",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 10,
         "tags": ["motherboard", "gaming"],
         "mainImage": "https://i.postimg.cc/FzYCGdS9/asusrog.png"
@@ -462,7 +462,7 @@
         "price": 250000,
         "stock": 15,
         "brand": "Nvidia",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 7,
         "tags": ["gpu", "gaming"],
         "mainImage": "https://i.postimg.cc/zBBJk7X4/geforcertx.png"
@@ -475,7 +475,7 @@
         "price": 5000,
         "stock": 80,
         "brand": "Arduino",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 15,
         "tags": ["arduino", "electronics"],
         "mainImage": "https://i.postimg.cc/cJTxY2ZQ/arduino1.png"
@@ -488,7 +488,7 @@
         "price": 20000,
         "stock": 40,
         "brand": "Arduino",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 10,
         "tags": ["robotics", "kit"],
         "mainImage": "https://i.postimg.cc/43X4YsCf/kitrobotica.png"
@@ -501,36 +501,36 @@
         "price": 15000,
         "stock": 70,
         "brand": "Corsair",
-        "category": "hardware",
+        "category": "jeans",
         "discount": 12,
         "tags": ["ram", "ddr4"],
         "mainImage": "https://i.postimg.cc/fRcTWkrq/corsair.png"
     },
     {
         "id": 40,
-        "title": "Disco SSD Samsung 1TB",
-        "shortDescription": "Disco de estado sólido para una mayor velocidad de lectura/escritura.",
-        "longDescription": "Aumenta el rendimiento de tu PC con este disco SSD de 1TB, perfecto para almacenamiento de alta velocidad.",
-        "price": 30000,
+        "title": "Jean SKINNY TIRO ALTO",
+        "shortDescription": "Jeans de tiro alto y cintura con trabillas",
+        "longDescription": "Cinco bolsillos. Efecto lavado. Cierre frontal con cremallera y botón.",
+        "price": 99900,
         "stock": 60,
-        "brand": "Samsung",
-        "category": "hardware",
+        "brand": "Zara",
+        "category": "jeans",
         "discount": 5,
         "tags": ["ssd", "storage"],
-        "mainImage": "https://i.postimg.cc/ZKy5gwFS/samsungssd.png"
+        "mainImage": "https://i.postimg.cc/wTchHpJ3/07223055427-e1.jpg"
     },
     {
         "id": 41,
-        "title": "Impresora 3D Creality Ender 3",
-        "shortDescription": "Impresora 3D de bajo costo y alta calidad.",
-        "longDescription": "Ideal para principiantes y proyectos avanzados, la Creality Ender 3 ofrece impresión 3D precisa y rápida.",
-        "price": 80000,
+        "title": "Jean WIDE LEG TIRO ALTO",
+        "shortDescription": "Jeans de tiro alto confeccionados en hilatura con mezcla de algodón.",
+        "longDescription": "Cintura con trabillas. Bolsillos de plastrón en delantero y espalda. Cierre frontal con cremallera y botón metálico.",
+        "price": 99990,
         "stock": 20,
-        "brand": "Creality",
-        "category": "hardware",
+        "brand": "Zara",
+        "category": "jeans",
         "discount": 8,
         "tags": ["3d-printing", "creality"],
-        "mainImage": "https://i.postimg.cc/13h3ZDJN/impresora3dcrealy.png"
+        "mainImage": "https://i.postimg.cc/HxV2shmR/08307049806-000-e1.jpg"
     },
     {
         "id": 42,

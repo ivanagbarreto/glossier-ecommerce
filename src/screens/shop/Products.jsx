@@ -19,6 +19,7 @@ const Products = ({ navigation, route }) => {
   const renderProductItem = ({ item }) => (
     <View>
       <Pressable onPress={() => handleSelectProduct(item)}>
+        
         <RobotoCondensedText>{item.title}</RobotoCondensedText>
       </Pressable>
     </View>
