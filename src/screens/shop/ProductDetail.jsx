@@ -23,7 +23,11 @@ const ProductDetail = () => {
       alert("Por favor seleccioná un talle");
       return;
     }
-    dispatch(addItemToCart({ product: { ...product, size: selectedSize }, quantity: 1 })
+    dispatch(
+      addItemToCart({
+        product: { ...product, size: selectedSize },
+        quantity: 1,
+      })
     );
   };
 
@@ -38,7 +42,19 @@ const ProductDetail = () => {
         height={width * 0.7}
         resizeMode="contain"
       />
+      <View style={styles.tagsContainer}>
+        <View style={styles.tags}>
+          <Text>Color: {product.color}</Text>
+        </View>
+
+        {product.discount > 0 && (
+          <View style={styles.discount}>
+            <Text style={styles.discountText}>-{product.discount}%</Text>
+          </View>
+        )}
+      </View>
       <Text style={styles.longDescription}>{product.longDescription}</Text>
+
       <View style={styles.sizeContainer}>
         <Text style={styles.sizeLabel}>Seleccioná tu talle:</Text>
         <View style={styles.sizesRow}>
@@ -63,17 +79,7 @@ const ProductDetail = () => {
           ))}
         </View>
       </View>
-      <View style={styles.tagsContainer}>
-        <View style={styles.tags}>
-          <Text>Color: {product.color}</Text>
-        </View>
 
-        {product.discount > 0 && (
-          <View style={styles.discount}>
-            <Text style={styles.discountText}>-{product.discount}%</Text>
-          </View>
-        )}
-      </View>
       {product.stock <= 0 && <Text style={styles.noStockText}>Sin Stock</Text>}
       <Text style={styles.price}>Precio: ${product.price}</Text>
       <Pressable
@@ -81,11 +87,15 @@ const ProductDetail = () => {
           { opacity: pressed ? 0.95 : 1 },
           styles.addToCartButton,
         ]}
-        onPress={() => dispatch(addItemToCart({
-    product: product,
-    quantity: 1,
-    size: selectedSize  
-}))}
+        onPress={() =>
+          dispatch(
+            addItemToCart({
+              product: product,
+              quantity: 1,
+              size: selectedSize,
+            })
+          )
+        }
       >
         <Text style={styles.textAddToCart}>Agregar al carrito</Text>
       </Pressable>
@@ -158,19 +168,19 @@ const styles = StyleSheet.create({
     padding: 8,
     paddingHorizontal: 16,
     backgroundColor: colors.lightPink,
-    borderRadius: 16,
+
     marginVertical: 16,
   },
   textAddToCart: {
     color: colors.white,
-    fontSize: 24,
+    fontSize: 15,
     textAlign: "center",
   },
   sizeContainer: {
     marginVertical: 12,
   },
   sizeLabel: {
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: "600",
     marginBottom: 8,
   },
@@ -179,19 +189,24 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   sizeButton: {
+    width: 45,
+    height: 45,
     borderWidth: 1,
     borderColor: colors.grisOscuro,
-    borderRadius: 8,
+    borderRadius: 25,
     paddingVertical: 8,
     paddingHorizontal: 16,
+    justifyContent: "center",
+    alignItems: "center",
   },
   sizeButtonSelected: {
     backgroundColor: colors.lightPink,
     borderColor: colors.lightPink,
   },
   sizeText: {
-    fontSize: 16,
-    fontWeight: "500",
+    fontSize: 9,
+    fontWeight: "800",
+    textAlign: "center",
   },
   sizeTextSelected: {
     color: colors.white,

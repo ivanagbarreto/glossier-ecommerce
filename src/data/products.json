@@ -438,7 +438,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 5,
-        "tags": ["cpu", "high-performance"],
+        "color":"Gris",
         "mainImage": "https://i.postimg.cc/qqKWgRrP/03607029802-e1.jpg"
     },
     {
@@ -451,7 +451,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 10,
-        "tags": ["motherboard", "gaming"],
+        "color":"Vino",
         "mainImage": "https://i.postimg.cc/4NhS1nrq/08246974681-e1.jpg"
     },
     {
@@ -464,7 +464,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 7,
-        "tags": ["gpu", "gaming"],
+        "color":"Verde militar",
         "mainImage": "https://i.postimg.cc/YCLMYp3C/04887008505-e1.jpg"
     },
     {
@@ -477,7 +477,7 @@
         "brand": "H&M",
         "category": "jeans",
         "discount": 15,
-        "tags": ["arduino", "electronics"],
+        "color":"Azul oscuro",
         "mainImage": "https://i.postimg.cc/FFS6yYtq/07223258400-e1.jpg"
     },
     {
@@ -490,7 +490,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 10,
-        "tags": ["robotics", "kit"],
+        "color":"Crudo",
         "mainImage": "https://i.postimg.cc/Gt3byGMW/07223025711-e1.jpg"
     },
     {
@@ -503,7 +503,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 12,
-        "tags": ["ram", "ddr4"],
+        "color":"Celeste",
         "mainImage": "https://i.postimg.cc/bv2ryxML/02829002406-e1.jpg"
     },
     {
@@ -516,7 +516,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 5,
-        "tags": ["ssd", "storage"],
+        "color":"Azul",
         "mainImage": "https://i.postimg.cc/wTchHpJ3/07223055427-e1.jpg"
     },
     {
@@ -529,7 +529,7 @@
         "brand": "Zara",
         "category": "jeans",
         "discount": 8,
-        "tags": ["3d-printing", "creality"],
+        "color":"Crudo",
         "mainImage": "https://i.postimg.cc/HxV2shmR/08307049806-000-e1.jpg"
     },
     {
@@ -542,7 +542,7 @@
         "brand": "Zara",
         "category": "pantalones",
         "discount": 10,
-        "tags": ["tbbt", "sheldon"],
+        "color":"Crudo",
         "mainImage": "https://i.postimg.cc/t4q0xd2q/03644116450-e1.jpg"
     },
     {
@@ -556,7 +556,7 @@
         "category": "pantalones",
         "discount": 15,
         "tags": ["harry-potter", "hogwarts"],
-        "mainImage": "https://i.postimg.cc/jq1jZpfc/mochilaharrypotter.png"
+        "mainImage": "https://i.postimg.cc/RhY0wRN3/03736257800-e1.jpg"
     },
     {
         "id": 44,
@@ -568,7 +568,7 @@
         "brand": "Zara",
         "category": "pantalones",
         "discount": 5,
-        "tags": ["star-wars", "hat"],
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/9Q6GkbKV/01971420700-e1.jpg"
     },
     {
@@ -581,7 +581,7 @@
         "brand": "Zara",
         "category": "pantalones",
         "discount": 10,
-        "tags": ["fitbit", "fitness"],
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/pVsKvR4s/05584191800-e1.jpg"
     },
     {
@@ -594,7 +594,7 @@
         "brand": "Zara",
         "category": "pantalones",
         "discount": 8,
-        "tags": ["flash", "dc-comics"],
+        "color":"Crudo",
         "mainImage": "https://i.postimg.cc/D0S0nk4N/04387530307-e1.jpg"
     },
     {
@@ -607,46 +607,46 @@
         "brand": "Zara",
         "category": "pantalones",
         "discount": 10,
-        "tags": ["wonder-woman", "bag"],
+        "color":"Gris",
         "mainImage": "https://i.postimg.cc/mgs9NkH2/08372810093-e1.jpg"
     },
     {
         "id": 48,
-        "title": "Concierto de Star Wars en Vivo",
-        "shortDescription": "Evento especial con la música de Star Wars interpretada por una orquesta sinfónica.",
-        "longDescription": "Una experiencia única donde podrás disfrutar de la banda sonora de Star Wars en directo, con efectos visuales y luces.",
-        "price": 10000,
+        "title": "Falda PANTALÓN ABERTURA",
+        "shortDescription": "Falda pantalón de tiro medio",
+        "longDescription": " Detalle de abertura en delantero. Cierre lateral con cremallera oculta.",
+        "price": 79900,
         "stock": 1000,
-        "brand": "Lucasfilm",
+        "brand": "Zara",
         "category": "faldas",
         "discount": 0,
-        "tags": ["star-wars", "music"],
-        "mainImage": "https://i.postimg.cc/4NrmNDNy/conciertostarwars.png"
+        "color":"Azul",
+        "mainImage": "https://i.postimg.cc/5tPjxbbq/05174539422-e1.jpg"
     },
     {
         "id": 49,
-        "title": "Comic-Con Argentina 2024",
-        "shortDescription": "El evento más esperado para los fans de los cómics, películas y series.",
-        "longDescription": "La Comic-Con Argentina 2024 reunirá a miles de fanáticos para disfrutar de charlas, concursos de cosplay y firmas de autógrafos de actores y artistas.",
-        "price": 5000,
-        "stock": 5000,
-        "brand": "Comic-Con",
+        "title": "Falda MINI DENIM",
+        "shortDescription": "Falda con cinco bolsillos. ",
+        "longDescription": "Efecto lavado. Cierre frontal con cremallera y botón metálico.",
+        "price": 89900,
+        "stock": 100,
+        "brand": "H&M",
         "category": "faldas",
         "discount": 10,
-        "tags": ["comics", "pop-culture"],
-        "mainImage": "https://i.postimg.cc/RZKq3gNR/comiccon.png"
+        "color":"Celeste",
+        "mainImage": "https://i.postimg.cc/SNy0G8WR/01889069427-e1.jpg"
     },
     {
         "id": 50,
-        "title": "Feria del Libro Buenos Aires 2024",
-        "shortDescription": "El evento más importante de la literatura en Argentina.",
-        "longDescription": "La Feria del Libro de Buenos Aires ofrece miles de actividades, stands de editoriales y la oportunidad de conocer a tus autores favoritos.",
-        "price": 3000,
-        "stock": 2000,
-        "brand": "Feria del Libro",
+        "title": "Falda PANTALÓN CARGO",
+        "shortDescription": "Falda pantalón de tiro alto",
+        "longDescription": "Bolsillos laterales de plastrón . Detalle de tablas. Cierre lateral con cremallera oculta en costura y trabilla con hebilla metálica.",
+        "price": 89900,
+        "stock": 100,
+        "brand": "Zara",
         "category": "faldas",
         "discount": 5,
-        "tags": ["literature", "books"],
-        "mainImage": "https://i.postimg.cc/c4KvWxWP/feriadellibro.png"
+        "color":"Crudo",
+        "mainImage": "https://i.postimg.cc/L8D8T2YK/01689521743-e1.jpg"
     }
 ]
