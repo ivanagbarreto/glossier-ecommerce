@@ -360,7 +360,7 @@
         "brand": "Zara",
         "category": "abrigos",
         "discount": 10,
-        "tags": ["storage", "new"],
+        "color":"Gris oscuro",
         "mainImage": "https://i.postimg.cc/W3Z1tWQz/03736918922-e1.jpg"
     },
     {
@@ -373,7 +373,7 @@
         "brand": "Zara",
         "category": "sweaters",
         "discount": 5,
-        "tags": ["star-wars", "funko"],
+         "color":"Rosa",
         "mainImage": "https://i.postimg.cc/J0Pzyxbk/06427041620-e1.jpg"
     },
     {
@@ -386,7 +386,7 @@
         "brand": "H&M",
         "category": "sweaters",
         "discount": 10,
-        "tags": ["marvel", "action-figure"],
+        "color":"Rosa",
         "mainImage": "https://i.postimg.cc/FRHqrxsq/02893032620-e1.jpg"
     },
     {
@@ -399,7 +399,7 @@
         "brand": "Zara",
         "category": "sweaters",
         "discount": 8,
-        "tags": ["lotr", "figure"],
+        "color":"Azul y blanco",
         "mainImage": "https://i.postimg.cc/gJF9v80M/02142017044-e1.jpg"
     },
     {
@@ -412,7 +412,7 @@
         "brand": "Zara",
         "category": "sweaters",
         "discount": 15,
-        "tags": ["got", "replica"],
+          "color":"Crudo",
         "mainImage": "https://i.postimg.cc/MTfLfpVb/03471801250-e1.jpg"
     },
     {
@@ -425,7 +425,7 @@
         "brand": "Zara",
         "category": "sweaters",
         "discount": 20,
-        "tags": ["harry-potter", "autograph"],
+        "color":"Crudo",
         "mainImage": "https://i.postimg.cc/tTXZCZHc/04192803712-e1.jpg"
     },
     {

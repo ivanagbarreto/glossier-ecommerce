@@ -30,11 +30,13 @@ const Cart = () => {
       </View>
       <View style={styles.cartDescription}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.shortDescription}</Text>
+         <Text style={styles.size}>Talle: {item.size}</Text>
         <Text style={styles.price}>Precio unitario: $ {item.price}</Text>
-        <Text stlyle={styles.quantity}>Cantidad: {item.quantity}</Text>
+        <Text style={styles.quantity}>Cantidad: {item.quantity}</Text>
+       
         <Text style={styles.total}>Total: $ {item.quantity * item.price}</Text>
-        <Pressable onPress={() => dispatch(removeItems(item.id))}>
+
+        <Pressable onPress={() => dispatch(removeItems({ id: item.id, size: item.size }))}>
           <Icon name="delete" size={24} color={colors.red} style={styles.trashIcon} />
         </Pressable>
       </View>
@@ -66,19 +68,23 @@ export default Cart
 const styles = StyleSheet.create({
   cartContainer: {
     flexDirection: 'row',
-    padding: 20,
+    padding: 16,
     justifyContent: "flex-start",
     margin: 16,
     alignItems: "center",
-    gap: 10
+    gap: 10,
+   
   },
   cartImage: {
     width: 80,
     height: 80
   },
   cartDescription: {
+    flex: 1,
     width: '80%',
+    flexDirection: 'column',
     padding: 20,
+     
   },
   title: {
     fontSize: 16,
@@ -117,7 +123,8 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontSize: 16,
     fontWeight: '700'
-  }, cartScreenTitle: {
+  }, 
+  cartScreenTitle: {
     fontSize: 16,
     fontWeight: '700',
     textAlign: "center",
