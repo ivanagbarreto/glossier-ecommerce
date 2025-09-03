@@ -13,7 +13,7 @@ const Search = ({ setKeyword }) => {
         }}
       />
 
-      <Icon name="search" size={32} color={colors.mediumGray} />
+      <Icon name="search" size={24} color={colors.mediumGray}  />
     </View>
   );
 };

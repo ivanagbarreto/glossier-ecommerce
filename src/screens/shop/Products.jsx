@@ -40,6 +40,7 @@ const Products = ({ navigation }) => {
     <Pressable style={[styles.card, { width: cardWidth }]} onPress={() => handleSelectProduct(item)}>
       <Image source={{ uri: item.mainImage }} style={styles.image} />
       <RobotoCondensedText style={styles.title}>{item.title}</RobotoCondensedText>
+      <Text>${item.price}</Text>
     </Pressable>
   );
 

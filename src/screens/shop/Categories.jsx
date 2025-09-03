@@ -36,11 +36,7 @@ const Categories = ({navigation}) => {
     <Pressable onPress={()=>handleSelectCategory(item.title)}>
       <View >
         <FlatCard style={styles.container}>
-          <Image
-            style={{ width: 25, height: 25 }}
-            source={{ uri: item.image }}
-            resizeMode="contain"
-          />
+          
           <RobotoCondensedText style={styles.itemTitle}> {item.title}</RobotoCondensedText>
           <Icon name={item.icon} size={15} color={colors.darkGray} marginLeft="auto" />
         </FlatCard>

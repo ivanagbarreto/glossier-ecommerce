@@ -81,7 +81,7 @@ const ProductDetail = () => {
       </View>
 
       {product.stock <= 0 && <Text style={styles.noStockText}>Sin Stock</Text>}
-      <Text style={styles.price}>Precio: ${product.price}</Text>
+      <Text style={styles.price}> ${product.price}</Text>
       <Pressable
         style={({ pressed }) => [
           { opacity: pressed ? 0.95 : 1 },
@@ -121,29 +121,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: "justify",
     paddingVertical: 8,
+    
   },
-  tagsContainer: {
-    flexDirection: "row",
-    gap: 5,
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginVertical: 8,
-  },
-  tags: {
-    flexDirection: "row",
-    gap: 5,
-  },
-  tagText: {
-    fontWeight: "600",
-    fontSize: 14,
-    color: colors.purple,
-  },
+ 
+
   price: {
     fontWeight: "800",
     fontSize: 18,
   },
   discount: {
-    backgroundColor: colors.brightOrange,
+    
     width: 52,
     height: 52,
     borderRadius: 52,
@@ -151,7 +138,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   discountText: {
-    color: colors.white,
+    color: colors.darkGray,
     textAlign: "center",
     verticalAlign: "center",
   },
@@ -168,13 +155,18 @@ const styles = StyleSheet.create({
     padding: 8,
     paddingHorizontal: 16,
     backgroundColor: colors.lightPink,
-
+borderWidth:1,
+    borderColor:colors.black,
     marginVertical: 16,
   },
   textAddToCart: {
-    color: colors.white,
+    color: colors.black,
+    
     fontSize: 15,
     textAlign: "center",
+    fontFamily:"RobotoCondensed-Bold",
+        textTransform:"uppercase",
+        letterSpacing: 2
   },
   sizeContainer: {
     marginVertical: 12,

@@ -1,44 +1,37 @@
 [
-    {
-        "id":1,
-        "title":"Abrigos",
-        "image":"https://i.pinimg.com/736x/02/89/11/028911193bcdea8ddcb9bedbf8b80e66.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":2,
-        "title":"Remeras",
-        "image":"https://i.pinimg.com/736x/28/b4/c3/28b4c30c403842c2d4fe14b513110413.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":3,
-        "title":"Sweaters",
-        "image":"https://i.pinimg.com/736x/8e/b3/1b/8eb31b9af68189c897e516fdddd16083.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":4,
-        "title":"Jeans",
-        "image":"https://i.pinimg.com/736x/18/08/de/1808de5084083b44431242e32f951487.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":5,
-        "title":"Pantalones",
-        "image":"https://i.pinimg.com/736x/4a/13/02/4a13027848a088c93e89814357a21036.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":6,
-        "title":"Vestidos",
-        "image":"https://i.pinimg.com/736x/f1/a3/90/f1a3900beb85c645517d9dd4585ddd49.jpg",
-         "icon": "chevron-right"
-    },
-    {
-        "id":7,
-        "title":"Faldas",
-        "image":"https://i.postimg.cc/L85pWBfy/skirt-1.png",
-         "icon": "chevron-right"
-    }
+  {
+    "id": 1,
+    "title": "Abrigos",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 2,
+    "title": "Remeras",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 3,
+    "title": "Sweaters",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 4,
+    "title": "Jeans",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 5,
+    "title": "Pantalones",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 6,
+    "title": "Vestidos",
+    "icon": "chevron-right"
+  },
+  {
+    "id": 7,
+    "title": "Faldas",
+    "icon": "chevron-right"
+  }
 ]

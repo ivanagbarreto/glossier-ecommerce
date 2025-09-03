@@ -21,14 +21,14 @@ const TabsNavigator = () => {
           name="Shop" 
           component={ShopStackNavigator} 
           options={{
-              tabBarIcon:({focused})=>(<Icon name="shopping-bag" size={24} color={focused?colors.white:colors.darkGray}/>)
+              tabBarIcon:({focused})=>(<Icon name="shopping-bag" size={24} color={focused?colors.darkGray:colors.black}/>)
       }}
       />
       <Tab.Screen 
           name="Cart"
           component={CartStackNavigator} 
           options={{
-              tabBarIcon:({focused})=>(<Icon name="shopping-cart" size={24} color={focused?colors.white:colors.darkGray}/>)
+              tabBarIcon:({focused})=>(<Icon name="shopping-cart" size={24} color={focused?colors.darkGray:colors.black}/>)
       }}/>
     </Tab.Navigator>
   );

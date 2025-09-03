@@ -20,6 +20,7 @@ export default function App() {
     "RobotoCondensed-Light": require("./assets/fonts/RobotoCondensed-Light.ttf"),
     "RobotoCondensed-Regular": require("./assets/fonts/RobotoCondensed-Regular.ttf"),
     "PressStart2P-Regular": require("./assets/fonts/PressStart2P-Regular.ttf"),
+    "PlayfairDisplay-Bold":require("./assets/fonts/PlayfairDisplay-Bold.ttf")
   });
   useEffect(() => {
     if (loaded || error) {
@@ -38,7 +39,7 @@ export default function App() {
           style={styles.container}
           resizeMode="cover"
         >
-          <StatusBar backgroundColor={colors.lightPink} />
+          <StatusBar backgroundColor={colors.lightGray} />
 
           <TabsNavigator />
         </ImageBackground>
