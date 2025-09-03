@@ -42,14 +42,14 @@ const ProductDetail = () => {
         height={width * 0.7}
         resizeMode="contain"
       />
-      <View style={styles.tagsContainer}>
-        <View style={styles.tags}>
-          <Text>Color: {product.color}</Text>
-        </View>
 
+      <View style={styles.tags}>
+        <Text style={styles.colorTitle}>Color: {product.color}</Text>
+      </View>
+      <View style={styles.tagsContainer}>
         {product.discount > 0 && (
           <View style={styles.discount}>
-            <Text style={styles.discountText}>-{product.discount}%</Text>
+            <Text style={styles.discountText}>-{product.discount}% {"\n"}Discount</Text>
           </View>
         )}
       </View>
@@ -97,7 +97,7 @@ const ProductDetail = () => {
           )
         }
       >
-        <Text style={styles.textAddToCart}>Agregar al carrito</Text>
+        <Text style={styles.textAddToCart}>Añadir</Text>
       </Pressable>
     </ScrollView>
   );
@@ -114,23 +114,24 @@ const styles = StyleSheet.create({
     color: colors.grisOscuro,
   },
   textTitle: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: "700",
+    textTransform: "uppercase",
   },
   longDescription: {
     fontSize: 16,
     textAlign: "justify",
     paddingVertical: 8,
-    
   },
- 
+  colorTitle: {
+    textTransform: "uppercase",
+  },
 
   price: {
     fontWeight: "800",
     fontSize: 18,
   },
   discount: {
-    
     width: 52,
     height: 52,
     borderRadius: 52,
@@ -138,6 +139,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   discountText: {
+    fontSize:12,
     color: colors.darkGray,
     textAlign: "center",
     verticalAlign: "center",
@@ -155,18 +157,18 @@ const styles = StyleSheet.create({
     padding: 8,
     paddingHorizontal: 16,
     backgroundColor: colors.lightPink,
-borderWidth:1,
-    borderColor:colors.black,
+    borderWidth: 1,
+    borderColor: colors.black,
     marginVertical: 16,
   },
   textAddToCart: {
     color: colors.black,
-    
+
     fontSize: 15,
     textAlign: "center",
-    fontFamily:"RobotoCondensed-Bold",
-        textTransform:"uppercase",
-        letterSpacing: 2
+    fontFamily: "RobotoCondensed-Bold",
+    textTransform: "uppercase",
+    letterSpacing: 2,
   },
   sizeContainer: {
     marginVertical: 12,
@@ -181,11 +183,8 @@ borderWidth:1,
     gap: 10,
   },
   sizeButton: {
-    width: 45,
-    height: 45,
-    borderWidth: 1,
     borderColor: colors.grisOscuro,
-    borderRadius: 25,
+
     paddingVertical: 8,
     paddingHorizontal: 16,
     justifyContent: "center",
@@ -193,7 +192,8 @@ borderWidth:1,
   },
   sizeButtonSelected: {
     backgroundColor: colors.lightPink,
-    borderColor: colors.lightPink,
+    
+    
   },
   sizeText: {
     fontSize: 9,
@@ -201,6 +201,7 @@ borderWidth:1,
     textAlign: "center",
   },
   sizeTextSelected: {
-    color: colors.white,
+    color: colors.black,
+    borderColor: colors.black,
   },
 });

@@ -40,7 +40,7 @@ const Products = ({ navigation }) => {
     <Pressable style={[styles.card, { width: cardWidth }]} onPress={() => handleSelectProduct(item)}>
       <Image source={{ uri: item.mainImage }} style={styles.image} />
       <RobotoCondensedText style={styles.title}>{item.title}</RobotoCondensedText>
-      <Text>${item.price}</Text>
+      <Text style={styles.price}>${item.price}</Text>
     </Pressable>
   );
 
@@ -81,5 +81,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginVertical: 8,
     textAlign: "center",
+    marginBottom:8,
   },
+  price:{
+    marginTop:8,
+  }
 });
