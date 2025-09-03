@@ -5,11 +5,11 @@
         "shortDescription": "Vestido corto confeccionado en tejido elástico",
         "longDescription": "Escote recto y tirantes finos ajustables. Detalle de pliegues. Forro interior combinado. Cierre con cremallera oculta en costura.",
         "price": 99990,
-        "stock": 0,
+        "stock": 2,
         "brand": "Zara",
         "category": "vestidos",
-        "discount": 0,
-        "tags": ["new", "ofert"],
+        "discount": 5,
+        "color":"Blanco",
         "mainImage": "https://i.postimg.cc/wTZJtLmt/03152389250-e1.jpg"
     },
     {
@@ -18,11 +18,11 @@
         "shortDescription": "Vestido corto de cuello redondo y manga sisa.",
         "longDescription": "Detalle de tejido drapeado. Cierre en espalda con cremallera oculta en costura.",
         "price": 89990,
-        "stock": 40,
+        "stock": 10,
         "brand": "Zara",
         "category": "vestidos",
         "discount": 5,
-        "tags": ["popular", "classic","discounts"],
+        "color":"Rosa",
         "mainImage": "https://i.postimg.cc/qvYTHBWH/04772450626-e1.jpg"
     },
     {
@@ -35,7 +35,7 @@
         "brand": "Zara",
         "category": "vestidos",
         "discount": 10,
-        "tags": ["classic", "retro"],
+        "color":"Azul marino",
         "mainImage": "https://i.postimg.cc/mkVvXT7q/03527554401-e1.jpg"
     },
     {
@@ -47,8 +47,8 @@
         "stock": 10,
         "brand": "Zara",
         "category": "vestidos",
-        "discount": 20,
-        "tags": ["retro", "vintage"],
+        "discount": 5,
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/pdfcM8sn/03486731800-e1.jpg"
     },
     {
@@ -60,8 +60,8 @@
         "stock": 5,
         "brand": "Zara",
         "category": "vestidos",
-        "discount": 25,
-        "tags": ["vintage", "collector"],
+        "discount": 5,
+        "color":"Beige y blanco",
         "mainImage": "https://i.postimg.cc/DZ6pFBm4/vestidomini.jpg"
     },
     {
@@ -74,7 +74,7 @@
         "brand": "H&M",
         "category": "vestidos",
         "discount": 15,
-        "tags": ["classic", "retro"],
+        "color":"Blanco",
         "mainImage": "https://i.postimg.cc/Dfr4f0Qh/lencero.jpg"
     },
     {
@@ -87,7 +87,7 @@
         "brand": "Zara",
         "category": "vestidos",
         "discount": 10,
-        "tags": ["classic", "popular"],
+        "color":"Azul",
         "mainImage": "https://i.postimg.cc/WbD3F4gt/denim.jpg"
     },
     {
@@ -100,7 +100,7 @@
         "brand": "H&M",
         "category": "vestidos",
         "discount": 5,
-        "tags": ["modern", "new"],
+         "color":"Blanco",
         "mainImage": "https://i.postimg.cc/br4qHQkr/00085810251-e1.jpg"
     },
     {
@@ -113,21 +113,21 @@
         "brand": "Zara",
         "category": "vestidos",
         "discount": 0,
-        "tags": ["next-gen", "new"],
+         "color":"Negro",
         "mainImage": "https://i.postimg.cc/pLfPz5TV/04661279800-e1.jpg"
     },
     {
         "id": 10,
         "title": "Vestido OFF SHOULDER",
         "shortDescription": "Vestido de escote recto.",
-        "longDescription": "Acabado en vuelta con los hombros descubiertos y manga corta con frunces. Bajo combinado con tejido semitransparente.",
+        "longDescription": "Confeccionado en tejido de punto. Escote recto y hombros descubiertos.",
         "price": 175000,
         "stock": 25,
         "brand": "H&M",
         "category": "vestidos",
         "discount": 10,
-        "tags": ["popular", "family"],
-        "mainImage": "https://i.postimg.cc/J0XzF61Z/02893103716-e1.jpg"
+        "color":"Negro",
+        "mainImage": "https://i.postimg.cc/KvvPdRYq/07774732800-e1.jpg"
     },
     {
         "id": 11,
@@ -139,7 +139,7 @@
         "brand": "Zara",
         "category": "vestidos",
         "discount": 5,
-        "tags": ["portable", "classic"],
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/5ttNJN4x/09479070800-e1.jpg"
     },
     {
@@ -152,7 +152,7 @@
         "brand": "H&M",
         "category": "vestidos",
         "discount": 30,
-        "tags": ["retro", "collector"],
+        "color":"Beige",
         "mainImage": "https://i.postimg.cc/Wzcvd2vq/00881362017-e1.jpg"
     },
     {
@@ -165,7 +165,7 @@
         "brand": "H&M",
         "category": "vestidos",
         "discount": 40,
-        "tags": ["retro", "nostalgic"],
+       "color":"Granate",
         "mainImage": "https://i.postimg.cc/PqLsKLf8/03484982605-e1.jpg"
     },
     {
@@ -178,7 +178,7 @@
         "brand": "Zara",
         "category": "abrigos",
         "discount": 10,
-        "tags": ["storage", "new"],
+        "color":"Tostado",
         "mainImage": "https://i.postimg.cc/GppYfC6D/05063716704-e1.jpg"
     },
     {
@@ -191,7 +191,7 @@
         "brand": "H&M",
         "category": "abrigos",
         "discount": 5,
-        "tags": ["AR", "new"],
+        "color":"Marrón",
         "mainImage": "https://i.postimg.cc/RF7H6ZHj/08372054700-e1.jpg"
     },
     {
@@ -204,7 +204,7 @@
         "brand": "Oral B",
         "category": "abrigos",
         "discount": 15,
-        "tags": ["health", "smart"],
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/Dy2qGL55/04749716800-e1.jpg"
     },
     {
@@ -217,7 +217,7 @@
         "brand": "Zara",
         "category": "abrigos",
         "discount": 10,
-        "tags": ["wearable", "fitness"],
+        "color":"Gris",
         "mainImage": "https://i.postimg.cc/RVsnn8WV/03046020803-e1.jpg"
     },
     {
@@ -230,7 +230,7 @@
         "brand": "H&M",
         "category": "abrigos",
         "discount": 5,
-        "tags": ["massage", "wellness"],
+        "color":"Gris",
         "mainImage": "https://i.postimg.cc/bNcqV94H/gris.jpg"
     },
     {
@@ -243,7 +243,7 @@
         "brand": "Zara",
         "category": "abrigos",
         "discount": 8,
-        "tags": ["VR", "gaming"],
+        "color":"Gris",
         "mainImage": "https://i.postimg.cc/FKqMd94g/07519284802-e1.jpg"
     },
     {
@@ -256,7 +256,7 @@
         "brand": "Zara",
         "category": "abrigos",
         "discount": 12,
-        "tags": ["charger", "wireless"],
+        "color":"Azul",
         "mainImage": "https://i.postimg.cc/L5hgyB7M/00108221427-e1.jpg"
     },
     {
@@ -269,7 +269,7 @@
         "brand": "H&M",
         "category": "abrigos",
         "discount": 10,
-        "tags": ["smart-home", "assistant"],
+        "color":"Ocre",
         "mainImage": "https://i.postimg.cc/g0dX9P5s/04341704743-e1.jpg"
     },
     {
@@ -282,7 +282,7 @@
         "brand": "Sony",
         "category": "abrigos",
         "discount": 10,
-        "tags": ["audio", "bluetooth"],
+        "color":"Ocre y marrón",
         "mainImage": "https://i.postimg.cc/ncbQK7kN/04341976703-510-e1.jpg"
     },
     {
@@ -295,7 +295,7 @@
         "brand": "H&M",
         "category": "abrigos",
         "discount": 7,
-        "tags": ["action-camera", "adventure"],
+       "color":"Crudo",
         "mainImage": "https://i.postimg.cc/BQKXX6fN/04088055710-e1.jpg"
     },
     {
@@ -308,7 +308,7 @@
         "brand": "H&M",
         "category": "remeras",
         "discount": 5,
-        "tags": ["superhero", "classic"],
+        "color":"Vino",
         "mainImage": "https://i.postimg.cc/d0vbGWkD/04764220660-e1.jpg"
     },
     {
@@ -321,7 +321,7 @@
         "brand": "Zara",
         "category": "remeras",
         "discount": 10,
-        "tags": ["superhero", "multiverse"],
+        "color":"Beige",
         "mainImage": "https://i.postimg.cc/y8NQKwZm/chalecocuadros.jpg"
     },
     {
@@ -334,7 +334,7 @@
         "brand": "Zara",
         "category": "remeras",
         "discount": 8,
-        "tags": ["classic", "superhero"],
+        "color":"Negro",
         "mainImage": "https://i.postimg.cc/P5NpT4rp/00881018800-e1.jpg"
     },
     {
@@ -347,7 +347,7 @@
         "brand": "H&M",
         "category": "remeras",
         "discount": 12,
-        "tags": ["sci-fi", "fantasy"],
+        "color":"Marrón",
         "mainImage": "https://i.postimg.cc/mD3h8pVq/06236014700-e1.jpg"
     },
     {
@@ -500,7 +500,7 @@
         "longDescription": " Bajo deshilachado acabado en línea evasé. Cierre frontal con cremallera y botón metálico.",
         "price": 89990,
         "stock": 70,
-        "brand": "zara",
+        "brand": "Zara",
         "category": "jeans",
         "discount": 12,
         "tags": ["ram", "ddr4"],
@@ -534,81 +534,81 @@
     },
     {
         "id": 42,
-        "title": "Camiseta Sheldon Cooper",
-        "shortDescription": "Camiseta con diseño de Sheldon de The Big Bang Theory.",
-        "longDescription": "Camiseta con una de las frases icónicas de Sheldon Cooper, perfecta para fans de la serie.",
-        "price": 3500,
+        "title": "Pantalon bolsillos",
+        "shortDescription": "Pantalón de tiro medio y cintura con elástico en espalda. ",
+        "longDescription": "Bolsillos laterales de plastrón con botón metálico en relive. Pierna ancha.",
+        "price": 89900,
         "stock": 50,
-        "brand": "TBBT",
-        "category": "ropa-y-accesorios",
+        "brand": "Zara",
+        "category": "pantalones",
         "discount": 10,
         "tags": ["tbbt", "sheldon"],
-        "mainImage": "https://i.postimg.cc/FzwszSv8/bazinga.png"
+        "mainImage": "https://i.postimg.cc/t4q0xd2q/03644116450-e1.jpg"
     },
     {
         "id": 43,
-        "title": "Mochila Harry Potter Hogwarts",
-        "shortDescription": "Mochila inspirada en la casa de Hogwarts.",
-        "longDescription": "Mochila de alta calidad con el escudo de la casa de Hogwarts, ideal para fans de Harry Potter.",
-        "price": 6000,
+        "title": "Pantalon recto",
+        "shortDescription": "Pantalón de tiro alto con bolsillos y espalda. ",
+        "longDescription": "Cierre frontal con cremallera y botón.",
+        "price": 139900,
         "stock": 30,
-        "brand": "Harry Potter",
-        "category": "ropa-y-accesorios",
+        "brand": "H&M",
+        "category": "pantalones",
         "discount": 15,
         "tags": ["harry-potter", "hogwarts"],
         "mainImage": "https://i.postimg.cc/jq1jZpfc/mochilaharrypotter.png"
     },
     {
         "id": 44,
-        "title": "Gorra Star Wars",
-        "shortDescription": "Gorra con el logotipo de Star Wars.",
-        "longDescription": "Gorra ajustable con el logotipo de Star Wars, ideal para los seguidores de la saga.",
-        "price": 2500,
+        "title": "Pantalon JOGGER",
+        "shortDescription": "Pantalón de tiro alto",
+        "longDescription": "Cintura elástica ajustable con cordones. Bolsillos delanteros. Bajo acabado en puño elástico.",
+        "price": 89900,
         "stock": 100,
-        "brand": "Star Wars",
-        "category": "ropa-y-accesorios",
+        "brand": "Zara",
+        "category": "pantalones",
         "discount": 5,
         "tags": ["star-wars", "hat"],
-        "mainImage": "https://i.postimg.cc/5yX2f3h8/gorrastarwars.png"
+        "mainImage": "https://i.postimg.cc/9Q6GkbKV/01971420700-e1.jpg"
     },
     {
         "id": 45,
-        "title": "Pulsera Fitbit Charge 5",
-        "shortDescription": "Pulsera inteligente para seguimiento de actividad física.",
-        "longDescription": "La Fitbit Charge 5 ofrece monitorización de sueño, ritmo cardíaco y niveles de estrés, perfecta para mantenerte en forma.",
-        "price": 12000,
+        "title": "Pantalon FLARE STRETCH",
+        "shortDescription": "Pantalón confeccionado en tejido elástico. ",
+        "longDescription": "Tiro alto y cintura elástica. Bajo acabado flare.",
+        "price": 79900,
         "stock": 40,
-        "brand": "Fitbit",
-        "category": "ropa-y-accesorios",
+        "brand": "Zara",
+        "category": "pantalones",
         "discount": 10,
         "tags": ["fitbit", "fitness"],
-        "mainImage": "https://i.postimg.cc/RFs0r8DM/fitbitcharge.png"
+        "mainImage": "https://i.postimg.cc/pVsKvR4s/05584191800-e1.jpg"
     },
     {
         "id": 46,
-        "title": "Sudadera The Flash",
-        "shortDescription": "Sudadera con el logo de The Flash.",
-        "longDescription": "Sudadera roja con el icónico logotipo del superhéroe de DC Comics, ideal para cualquier fan.",
-        "price": 5500,
+        "title": "Pantalon ancho",
+        "shortDescription": "Pantalón de tiro alto",
+        "longDescription": " Cintura elástica ajustable con cordones. Bolsillos delanteros. Pernera ancha.",
+        "price": 89900,
         "stock": 50,
-        "brand": "DC Comics",
-        "category": "ropa-y-accesorios",
+        "brand": "Zara",
+        "category": "pantalones",
         "discount": 8,
         "tags": ["flash", "dc-comics"],
-        "mainImage": "https://i.postimg.cc/QMqtmVgK/remeratheflash.png"
+        "mainImage": "https://i.postimg.cc/D0S0nk4N/04387530307-e1.jpg"
     },
     {
         "id": 47,
-        "title": "Bolso de Wonder Woman",
-        "shortDescription": "Bolso con el logo de Wonder Woman.",
-        "longDescription": "Este bolso resistente y espacioso tiene el logo de Wonder Woman, perfecto para las salidas diarias.",
-        "price": 3000,
+        "title": "Pantalon  CINTURÓN",
+        "shortDescription": "Pantalón de tiro alto con bolsillos en delantero y falsos bolsillos de vivo en espalda. ",
+        "longDescription": "Detalle de cinturón a contraste con hebilla metálica. Cierre frontal con cremallera y gancho metálico.",
+        "price": 99900,
         "stock": 60,
-        "brand": "DC Comics",
-        "category": "ropa-y-accesorios",
+        "brand": "Zara",
+        "category": "pantalones",
         "discount": 10,
         "tags": ["wonder-woman", "bag"],
-        "mainImage": "https://i.postimg.cc/cJWCff3N/bolsowonderwoman.png"
+        "mainImage": "https://i.postimg.cc/mgs9NkH2/08372810093-e1.jpg"
     },
     {
         "id": 48,
@@ -618,7 +618,7 @@
         "price": 10000,
         "stock": 1000,
         "brand": "Lucasfilm",
-        "category": "eventos",
+        "category": "faldas",
         "discount": 0,
         "tags": ["star-wars", "music"],
         "mainImage": "https://i.postimg.cc/4NrmNDNy/conciertostarwars.png"
@@ -631,7 +631,7 @@
         "price": 5000,
         "stock": 5000,
         "brand": "Comic-Con",
-        "category": "eventos",
+        "category": "faldas",
         "discount": 10,
         "tags": ["comics", "pop-culture"],
         "mainImage": "https://i.postimg.cc/RZKq3gNR/comiccon.png"
@@ -644,7 +644,7 @@
         "price": 3000,
         "stock": 2000,
         "brand": "Feria del Libro",
-        "category": "eventos",
+        "category": "faldas",
         "discount": 5,
         "tags": ["literature", "books"],
         "mainImage": "https://i.postimg.cc/c4KvWxWP/feriadellibro.png"
