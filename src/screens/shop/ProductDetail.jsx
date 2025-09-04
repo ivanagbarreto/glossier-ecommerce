@@ -31,6 +31,8 @@ const ProductDetail = () => {
     );
   };
 
+
+
   return (
     <ScrollView style={styles.productContainer}>
       <Text style={styles.textBrand}>{product.brand}</Text>

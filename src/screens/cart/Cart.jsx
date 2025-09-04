@@ -38,6 +38,7 @@ const Cart = () => {
 
         <Pressable onPress={() => dispatch(removeItems({ id: item.id, size: item.size }))}>
           <Icon name="delete" size={24} color={colors.red} style={styles.trashIcon} />
+          
         </Pressable>
       </View>
     </FlatCard>
@@ -57,7 +58,7 @@ const Cart = () => {
           />
 
           :
-          <Text>Aún no hay productos en el carrito</Text>
+          <Text style={styles.noProducts}>Aún no hay productos en el carrito</Text>
       }
     </>
   )
@@ -116,19 +117,27 @@ const styles = StyleSheet.create({
     padding: 8,
     paddingHorizontal: 16,
     backgroundColor: colors.lightPink,
-    borderRadius: 16,
+    
     marginBottom: 24,
   },
   confirmButtonText: {
-    color: colors.white,
-    fontSize: 16,
+    color: colors.black,
+    textTransform:"uppercase",
+    fontSize: 10,
     fontWeight: '700'
   }, 
   cartScreenTitle: {
     fontSize: 16,
     fontWeight: '700',
     textAlign: "center",
-    paddingVertical: 8
+    paddingVertical: 8,
+    textTransform:"uppercase",
+    fontFamily: "RobotoCondensed-Regular",
+  },
+  noProducts:{
+    margin:16,
+    textTransform:"uppercase",
+    fontFamily: "RobotoCondensed-Regular",
   }
 
 })

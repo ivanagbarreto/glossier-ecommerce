@@ -365,29 +365,29 @@
     },
     {
         "id": 29,
-        "title": "Sweater PUNTO MANGA FRANCESA",
-        "shortDescription": "Chaqueta de cuello redondo ",
-        "longDescription": "Manga por debajo del codo. Tapetas delanteras. Cierre frontal con botones.",
+        "title": "Sweater CUELLO BOTONES",
+        "shortDescription": "Tejido cuello solapa ",
+        "longDescription": "Jersey de cuello solapa con botones dorados y manga larga.",
         "price": 99990,
         "stock": 100,
         "brand": "Zara",
         "category": "sweaters",
         "discount": 5,
-         "color":"Rosa",
-        "mainImage": "https://i.postimg.cc/J0Pzyxbk/06427041620-e1.jpg"
+         "color":"Azul Petroleo",
+        "mainImage": "https://i.postimg.cc/P5TW6WyL/02488851200-e1.jpg"
     },
     {
         "id": 30,
-        "title": "Sweater PUNTO VOLANTES",
-        "shortDescription": "Chaqueta de punto liso con cuello redondo",
-        "longDescription": "Manga larga. Detalle de acabados con volantes. Cierre frontal con botones.",
+        "title": "Sweater BÁSICO PUNTO",
+        "shortDescription": "Tejido punto liso con cuello redondo",
+        "longDescription": "Jersey de punto liso confeccionado en 100% lana. Cuello redondo y manga larga. Acabados en rib.",
         "price": 89900,
         "stock": 30,
         "brand": "H&M",
         "category": "sweaters",
         "discount": 10,
-        "color":"Rosa",
-        "mainImage": "https://i.postimg.cc/FRHqrxsq/02893032620-e1.jpg"
+        "color":"Granate",
+        "mainImage": "https://i.postimg.cc/FRyFnLDR/02893100605-e1.jpg"
     },
     {
         "id": 31,

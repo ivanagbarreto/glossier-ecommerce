@@ -7,13 +7,13 @@ const Search = ({ setKeyword }) => {
     <View style={styles.searchContainer}>
       <TextInput
         style={styles.searchInput}
-        placeholder="Buscar Productos"
+        placeholder="¿Qué estás buscando?"
         onChangeText={(text) => {
           setKeyword(text);
         }}
       />
 
-      <Icon name="search" size={24} color={colors.mediumGray}  />
+      
     </View>
   );
 };
@@ -25,14 +25,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginHorizontal: 16,
-    marginVertical: 16,
+    marginHorizontal: 8,
+    marginVertical: 10,
   },
   searchInput: {
     borderWidth: 1,
     borderColor: colors.mediumGray,
-    borderRadius: 16,
-    minWidth: "85%",
+    borderRadius: 12,
+    minWidth: "90%",
     paddingLeft: 8,
+    textTransform:"uppercase"
   },
 });
