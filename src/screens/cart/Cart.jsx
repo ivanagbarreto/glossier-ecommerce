@@ -37,8 +37,8 @@ const Cart = () => {
         <Text style={styles.total}>Total: $ {item.quantity * item.price}</Text>
 
         <Pressable onPress={() => dispatch(removeItems({ id: item.id, size: item.size }))}>
-          <Icon name="delete" size={24} color={colors.red} style={styles.trashIcon} />
           
+          <Text style={styles.delete}>Eliminar</Text>
         </Pressable>
       </View>
     </FlatCard>
@@ -89,7 +89,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    fontWeight: '700'
+    fontWeight: '700',
+    textTransform:"uppercase"
   },
   description: {
     marginBottom: 16,
@@ -97,11 +98,13 @@ const styles = StyleSheet.create({
   total: {
     marginTop: 16,
     fontSize: 16,
-    fontWeight: '700'
+    fontWeight: '700',
+    textTransform:"uppercase"
   },
-  trashIcon: {
+  delete: {
     alignSelf: 'flex-end',
-    marginRight: 16,
+    marginRight: 8,
+    textTransform:"uppercase",
   },
   footerContainer: {
     padding: 32,

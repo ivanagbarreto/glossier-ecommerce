@@ -44,17 +44,13 @@ const Categories = ({navigation}) => {
     </Pressable>
   )};
   return (
-    <ImageBackground
-            source={require("../../../assets/background.jpeg")}
-            style={styles.container}
-            resizeMode="cover"
-          >
+
     <FlatList
       data={productCategories}
       renderItem={renderCategoryItem}
       keyExtractor={(item) => item.id}
     />
-    </ImageBackground>
+  
   );
 };
 

@@ -5,6 +5,7 @@ import RobotoCondensedText from "../../components/RobotoCondensedFont";
 import Search from "../../components/Search";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedProduct } from "../../store/slices/shopSlice";
+import { colors } from "../../global/colors";
 
 const screenWidth = Dimensions.get("window").width;
 const numColumns = 2;
@@ -63,11 +64,11 @@ export default Products;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
     padding: cardMargin,
   },
   card: {
-    backgroundColor: "#f9f9f9",
+    backgroundColor: colors.cardbackground,
     borderRadius: 8,
     overflow: "hidden",
     alignItems: "center",

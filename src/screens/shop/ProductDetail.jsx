@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
   productContainer: {
     paddingHorizontal: 16,
     marginVertical: 16,
+     backgroundColor: "#f9f9f9",
   },
   textBrand: {
     color: colors.grisOscuro,

@@ -49,6 +49,6 @@ export default TabsNavigator;
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: colors.mediumGray,
+    backgroundColor: colors.lightGray,
   },
 });

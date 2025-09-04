@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
   searchInput: {
     borderWidth: 1,
     borderColor: colors.mediumGray,
-    borderRadius: 12,
+    
     minWidth: "90%",
-    paddingLeft: 8,
+    paddingLeft:12,
     textTransform:"uppercase"
   },
 });

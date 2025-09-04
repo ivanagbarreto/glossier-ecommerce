@@ -4,9 +4,10 @@ export const colors = {
     "lightGray":"#EBEBEB",
     "white":"#FFF",
     "black":"#000",
-    "lightPink":"#F3A6B2",
+    "lightPink":"#f2cad0ff",
     "neonGreen":"#39FF14",
     "yellow":"#FFEB3B",
     "brightOrange":"#FF5722",
-    "red":"#cd3327"
+    "red":"#cd3327",
+    "cardbackground":"#f9f9f9"
 }
