@@ -13,7 +13,7 @@ const Header = ({ title, subtitle }) => {
 
       {canGoBack && (
         <Pressable style={styles.goBack} onPress={() => navigation.goBack()}>
-          <Icon name="chevron-left" size={24} color={colors.black} />
+          <Icon name="chevron-left" size={20} color={colors.black} />
         </Pressable>
       )}
     </View>
@@ -25,21 +25,21 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.lightGray,
-    height: 200,
+   height:120,
     justifyContent: "center",
     alignItems: "center",
   },
   title: {
-    fontSize: 25,
+    fontSize: 20,
     color: colors.black,
     fontFamily: "PlayfairDisplay-Bold",
     textTransform: "uppercase",
     letterSpacing: 2,
     margin:10,
+    marginTop:20,
   },
   subtitle: {
-    fontSize: 15,
-    
+    fontSize: 10,
     color: colors.black,
     fontFamily: "RobotoCondensed-Regular",
     textTransform: "uppercase",
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   goBack: {
     position: "absolute",
-    top: 100,
+    top: 80,
     left: 16,
   },
 });

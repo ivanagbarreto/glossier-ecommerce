@@ -60,9 +60,9 @@ const ProductDetail = () => {
       <View style={styles.sizeContainer}>
         <Text style={styles.sizeLabel}>Seleccioná tu talle:</Text>
         <View style={styles.sizesRow}>
-          {["S", "M", "L", "XL"].map((size) => (
+          {["S", "M", "L", "XL"].map((size, index) => (
             <Pressable
-              key={size}
+              key={index}
               style={[
                 styles.sizeButton,
                 selectedSize === size && styles.sizeButtonSelected,
