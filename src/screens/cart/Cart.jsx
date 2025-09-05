@@ -14,7 +14,7 @@ const Cart = () => {
     <View style={styles.footerContainer}>
       <Text style={styles.footerTotal}>Total: $ {total} </Text>
       <Pressable style={styles.confirmButton}>
-        <Text style={styles.confirmButtonText}>Confirmar</Text>
+        <Text style={styles.confirmButtonText}>Comprar</Text>
       </Pressable>
     </View>
   )
@@ -34,7 +34,7 @@ const Cart = () => {
         <Text style={styles.price}>Precio unitario: $ {item.price}</Text>
         <Text style={styles.quantity}>Cantidad: {item.quantity}</Text>
        
-        <Text style={styles.total}>Total: $ {item.quantity * item.price}</Text>
+        <Text style={styles.total}> $ {item.quantity * item.price}</Text>
 
         <Pressable onPress={() => dispatch(removeItems({ id: item.id, size: item.size }))}>
           
@@ -53,7 +53,7 @@ const Cart = () => {
             data={cartItems}
             keyExtractor={item => item.id}
             renderItem={renderCartItem}
-            ListHeaderComponent={<Text style={styles.cartScreenTitle}>Tu carrito:</Text>}
+            ListHeaderComponent={<Text style={styles.cartScreenTitle}>Carrito</Text>}
             ListFooterComponent={<FooterComponent />}
           />
 
@@ -90,7 +90,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     fontWeight: '700',
-    textTransform:"uppercase"
+    textTransform:"uppercase",
+    letterSpacing: 2,
+    
   },
   description: {
     marginBottom: 16,
@@ -107,14 +109,16 @@ const styles = StyleSheet.create({
     textTransform:"uppercase",
   },
   footerContainer: {
-    padding: 32,
+    padding: 20,
     gap: 8,
     justifyContent: 'center',
     alignItems: 'center'
   },
   footerTotal: {
     fontSize: 16,
-    fontWeight: '700'
+    fontWeight: '700',
+    textTransform:"uppercase",
+    letterSpacing: 2,
   },
   confirmButton: {
     padding: 8,
@@ -132,15 +136,18 @@ const styles = StyleSheet.create({
   cartScreenTitle: {
     fontSize: 16,
     fontWeight: '700',
-    textAlign: "center",
+    textAlign: "left",
     paddingVertical: 8,
     textTransform:"uppercase",
     fontFamily: "RobotoCondensed-Regular",
+    marginHorizontal: 16,
+    letterSpacing: 2,
   },
   noProducts:{
     margin:16,
     textTransform:"uppercase",
     fontFamily: "RobotoCondensed-Regular",
+     letterSpacing: 2,
   }
 
 })

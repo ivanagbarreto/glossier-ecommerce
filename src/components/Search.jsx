@@ -25,15 +25,17 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginHorizontal: 8,
+    marginHorizontal: 2,
     marginVertical: 10,
+    display:"flex",
+     alignSelf:"center"
   },
   searchInput: {
     borderWidth: 1,
     borderColor: colors.mediumGray,
-    
-    minWidth: "90%",
+    minWidth: "95%",
     paddingLeft:12,
-    textTransform:"uppercase"
+    textTransform:"uppercase",
+   
   },
 });

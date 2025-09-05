@@ -1,4 +1,12 @@
-import { StyleSheet, Text, View, FlatList, Pressable, Image, Dimensions } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+  Pressable,
+  Image,
+  Dimensions,
+} from "react-native";
 import products from "../../data/products.json";
 import { useEffect, useState } from "react";
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
@@ -38,9 +46,14 @@ const Products = ({ navigation }) => {
   }, [category, keyword]);
 
   const renderProductItem = ({ item }) => (
-    <Pressable style={[styles.card, { width: cardWidth }]} onPress={() => handleSelectProduct(item)}>
+    <Pressable
+      style={[styles.card, { width: cardWidth }]}
+      onPress={() => handleSelectProduct(item)}
+    >
       <Image source={{ uri: item.mainImage }} style={styles.image} />
-      <RobotoCondensedText style={styles.title}>{item.title}</RobotoCondensedText>
+      <RobotoCondensedText style={styles.title}>
+        {item.title}
+      </RobotoCondensedText>
       <Text style={styles.price}>${item.price}</Text>
     </Pressable>
   );
@@ -53,7 +66,10 @@ const Products = ({ navigation }) => {
         keyExtractor={(item) => item.id.toString()}
         renderItem={renderProductItem}
         numColumns={numColumns}
-        columnWrapperStyle={{ justifyContent: "space-between", marginBottom: cardMargin }}
+        columnWrapperStyle={{
+          justifyContent: "space-between",
+          marginBottom: cardMargin,
+        }}
       />
     </View>
   );
@@ -72,6 +88,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     overflow: "hidden",
     alignItems: "center",
+    padding: 8,
   },
   image: {
     width: "100%",
@@ -82,9 +99,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginVertical: 8,
     textAlign: "center",
-    marginBottom:8,
+    marginBottom: 8,
   },
-  price:{
-    marginTop:8,
-  }
+  price: {
+    marginTop: 8,
+  },
 });
