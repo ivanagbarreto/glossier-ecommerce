@@ -11,7 +11,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { colors } from "../../global/colors";
 import { addItemToCart } from "../../store/slices/cartSlice";
 import { useState } from "react";
-
+import AccordionItem from "../../components/AcordionItem";
+import ProductImages from "../../components/ProductImages";
 const ProductDetail = () => {
   const product = useSelector((state) => state.shopReducer.selectedProduct);
 
@@ -31,8 +32,6 @@ const ProductDetail = () => {
     );
   };
 
-
-
   return (
     <ScrollView style={styles.productContainer}>
       <Text style={styles.textBrand}>{product.brand}</Text>
@@ -51,7 +50,9 @@ const ProductDetail = () => {
       <View style={styles.tagsContainer}>
         {product.discount > 0 && (
           <View style={styles.discount}>
-            <Text style={styles.discountText}>-{product.discount}% {"\n"}Discount</Text>
+            <Text style={styles.discountText}>
+              -{product.discount}% {"\n"}Discount
+            </Text>
           </View>
         )}
       </View>
@@ -82,8 +83,36 @@ const ProductDetail = () => {
         </View>
       </View>
 
+      {/* IMAGENES ADICIONALES */}
+
+      <ProductImages images={product.images} />
+
+      {/* INFORMACION ADICIONAL */}
+      <View style={styles.container}>
+        <AccordionItem
+          title="COMPOSICIÓN & CUIDADOS"
+          content="
+Los lavados a bajas temperaturas y los programas de centrifugado suaves son más delicados con las prendas, ayudando a mantener el color, la forma y la estructura del tejido. Al mismo tiempo, reduce el consumo de energía que se utiliza en los procesos de cuidado. 
+
+"
+        />
+        <AccordionItem
+          title="ENVÍO, CAMBIOS Y DEVOLUCIONES"
+          content="Devoluciones gratis en un plazo de 30 días. ENVÍO A UNA TIENDA - GRATUITO
+Entrega en 2-4 días laborables.
+ENVÍO A DOMICILIO
+Entrega en 2-6 días laborables - 3.000,00 ARS
+El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
+Entrega en 1-2 días laborables - 5.000,00 ARS
+ENVÍO A PUNTO DE ENTREGA  - 3.000,00 ARS
+El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
+Entrega en 2-6 días laborables."
+        />
+      </View>
+
       {product.stock <= 0 && <Text style={styles.noStockText}>Sin Stock</Text>}
       <Text style={styles.price}> ${product.price}</Text>
+
       <Pressable
         style={({ pressed }) => [
           { opacity: pressed ? 0.95 : 1 },
@@ -111,7 +140,7 @@ const styles = StyleSheet.create({
   productContainer: {
     paddingHorizontal: 16,
     marginVertical: 16,
-     backgroundColor: "#f9f9f9",
+    backgroundColor: "#f9f9f9",
   },
   textBrand: {
     color: colors.grisOscuro,
@@ -142,7 +171,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   discountText: {
-    fontSize:12,
+    fontSize: 12,
     color: colors.darkGray,
     textAlign: "center",
     verticalAlign: "center",
@@ -195,8 +224,6 @@ const styles = StyleSheet.create({
   },
   sizeButtonSelected: {
     backgroundColor: colors.lightPink,
-    
-    
   },
   sizeText: {
     fontSize: 9,
@@ -206,5 +233,8 @@ const styles = StyleSheet.create({
   sizeTextSelected: {
     color: colors.black,
     borderColor: colors.black,
+  },
+  container: {
+    margin: 20,
   },
 });

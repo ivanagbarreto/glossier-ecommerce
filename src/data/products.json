@@ -156,7 +156,7 @@
     "color": "Beige",
     "mainImage": "https://i.postimg.cc/Wzcvd2vq/00881362017-e1.jpg"
   },
-    {
+  {
     "id": 13,
     "title": "Vestido LENCERO SATINADO",
     "shortDescription": "Vestido midi de escote pico y tirantes finos ajustables.",
@@ -623,7 +623,11 @@
     "category": "faldas",
     "discount": 0,
     "color": "Azul",
-    "mainImage": "https://i.postimg.cc/5tPjxbbq/05174539422-e1.jpg"
+    "mainImage": "https://i.postimg.cc/5tPjxbbq/05174539422-e1.jpg",
+        "images": [
+      "https://i.postimg.cc/hvPXzHcR/05174539422-a1.jpg",
+      "https://i.postimg.cc/L6WJ5CWG/05174539422-e3.jpg"
+    ]
   },
   {
     "id": 49,
@@ -636,7 +640,11 @@
     "category": "faldas",
     "discount": 10,
     "color": "Celeste",
-    "mainImage": "https://i.postimg.cc/SNy0G8WR/01889069427-e1.jpg"
+    "mainImage": "https://i.postimg.cc/SNy0G8WR/01889069427-e1.jpg",
+            "images": [
+      "https://i.postimg.cc/5tdjqHb3/01889069427-a1.jpg",
+      "https://i.postimg.cc/85T59qFf/01889069427-e3.jpg"
+    ]
   },
   {
     "id": 50,
@@ -648,8 +656,12 @@
     "brand": "Zara",
     "category": "faldas",
     "discount": 5,
-    "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/L8D8T2YK/01689521743-e1.jpg"
+    "color": "Camel claro",
+    "mainImage": "https://i.postimg.cc/L8D8T2YK/01689521743-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/sgBZJdSV/01689521743-a1.jpg",
+      "https://i.postimg.cc/rwvRnnC5/01689521743-e3.jpg"
+    ]
   },
   {
     "id": 51,
@@ -661,8 +673,12 @@
     "brand": "Zara",
     "category": "remeras",
     "discount": 5,
-    "color": "Blanco",
-    "mainImage": "https://i.postimg.cc/Fsptym68/04786112712-e1.jpg"
+    "color": "Crudo",
+    "mainImage": "https://i.postimg.cc/Fsptym68/04786112712-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/Jn3XBNXZ/T0478611300-p.jpg",
+      "https://i.postimg.cc/ryJWV9ML/04786112712-e3.jpg"
+    ]
   },
   {
     "id": 52,
@@ -675,7 +691,11 @@
     "category": "remeras",
     "discount": 5,
     "color": "Azul marino",
-    "mainImage": "https://i.postimg.cc/c4s242Jm/04192003401-e1.jpg"
+    "mainImage": "https://i.postimg.cc/c4s242Jm/04192003401-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/pV8Gq4fJ/04192003401-a4.jpg",
+      "https://i.postimg.cc/fRW8Wb68/04192003401-e3.jpg"
+    ]
   },
   {
     "id": 53,
@@ -687,8 +707,12 @@
     "brand": "Zara",
     "category": "remeras",
     "discount": 5,
-    "color": "Azul marino",
-    "mainImage": "https://i.postimg.cc/j2v87qjh/02142040104-e1.jpg"
+    "color": "Azul marino y blanco",
+    "mainImage": "https://i.postimg.cc/j2v87qjh/02142040104-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/q7PcKB5V/02142040104-a1.jpg",
+      "https://i.postimg.cc/NMR6kh3y/02142040104-e3.jpg"
+    ]
   },
   {
     "id": 54,
@@ -700,10 +724,14 @@
     "brand": "Zara",
     "category": "remeras",
     "discount": 5,
-    "color": "Azul marino",
-    "mainImage": "https://i.postimg.cc/nrV2p819/04192015606-e1.jpg"
+    "color": "Burdeos ",
+    "mainImage": "https://i.postimg.cc/nrV2p819/04192015606-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/fLdKqS9R/04192015606-020-a1.jpg",
+      "https://i.postimg.cc/ncpkTzcn/04192015606-016-a2.jpg"
+    ]
   },
-    {
+  {
     "id": 55,
     "title": "FALDA PANTALÓN EFECTO PIEL",
     "shortDescription": "Falda pantalón de tiro medio.",
@@ -714,6 +742,10 @@
     "category": "faldas",
     "discount": 5,
     "color": "Chocolate",
-    "mainImage": "https://i.postimg.cc/ZqK6WPdX/08338904717-e1.jpg"
+    "mainImage": "https://i.postimg.cc/ZqK6WPdX/08338904717-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/9QSQXDD2/08338904717-p.jpg",
+      "https://i.postimg.cc/V69fF4Ds/08338904717-e3.jpg"
+    ]
   }
 ]
