@@ -519,7 +519,11 @@
     "category": "jeans",
     "discount": 5,
     "color": "Azul",
-    "mainImage": "https://i.postimg.cc/wTchHpJ3/07223055427-e1.jpg"
+    "mainImage": "https://i.postimg.cc/wTchHpJ3/07223055427-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/0r12GFqN/00541052400-a3.jpg",
+      "https://i.postimg.cc/VvQSfDkX/00541052400-e3.jpg"
+    ]
   },
   {
     "id": 41,
@@ -532,7 +536,11 @@
     "category": "jeans",
     "discount": 8,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/HxV2shmR/08307049806-000-e1.jpg"
+    "mainImage": "https://i.postimg.cc/HxV2shmR/08307049806-000-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/gk13Q2Gw/08246273806-p.jpg",
+      "https://i.postimg.cc/C1M8kZs2/08307049806-000-e3.jpg"
+    ]
   },
   {
     "id": 42,
@@ -545,7 +553,11 @@
     "category": "pantalones",
     "discount": 10,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/t4q0xd2q/03644116450-e1.jpg"
+    "mainImage": "https://i.postimg.cc/t4q0xd2q/03644116450-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/qqjj2VKs/03644116450-p.jpg",
+      "https://i.postimg.cc/dQBWbdfh/03644116450-e3.jpg"
+    ]
   },
   {
     "id": 43,
@@ -557,8 +569,12 @@
     "brand": "H&M",
     "category": "pantalones",
     "discount": 15,
-    "tags": ["harry-potter", "hogwarts"],
-    "mainImage": "https://i.postimg.cc/RhY0wRN3/03736257800-e1.jpg"
+    "color": "Negro",
+    "mainImage": "https://i.postimg.cc/RhY0wRN3/03736257800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/C5VWcgd9/03736267800-a1.jpg",
+      "https://i.postimg.cc/6qLFSmvq/03736257800-e3.jpg"
+    ]
   },
   {
     "id": 44,
@@ -570,8 +586,12 @@
     "brand": "Zara",
     "category": "pantalones",
     "discount": 5,
-    "color": "Negro",
-    "mainImage": "https://i.postimg.cc/9Q6GkbKV/01971420700-e1.jpg"
+    "color": "Marrón",
+    "mainImage": "https://i.postimg.cc/9Q6GkbKV/01971420700-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/4NRJSDrf/01971420700-a2.jpg",
+      "https://i.postimg.cc/x1090KfB/01971420700-e3.jpg"
+    ]
   },
   {
     "id": 45,
@@ -584,7 +604,11 @@
     "category": "pantalones",
     "discount": 10,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/pVsKvR4s/05584191800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/pVsKvR4s/05584191800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/QMY8YHrw/05584191800-p.jpg",
+      "https://i.postimg.cc/j5GsKm2h/05584191800-e3.jpg"
+    ]
   },
   {
     "id": 46,
@@ -597,7 +621,11 @@
     "category": "pantalones",
     "discount": 8,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/D0S0nk4N/04387530307-e1.jpg"
+    "mainImage": "https://i.postimg.cc/D0S0nk4N/04387530307-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/KjkyHN5g/04387530307-p.jpg",
+      "https://i.postimg.cc/8c2VQ6yX/04387530307-e3.jpg"
+    ]
   },
   {
     "id": 47,
@@ -609,8 +637,12 @@
     "brand": "Zara",
     "category": "pantalones",
     "discount": 10,
-    "color": "Gris",
-    "mainImage": "https://i.postimg.cc/mgs9NkH2/08372810093-e1.jpg"
+    "color": "Negro y crudo",
+    "mainImage": "https://i.postimg.cc/mgs9NkH2/08372810093-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/wBQxX0Wq/08372810093-p.jpg",
+      "https://i.postimg.cc/5y6xM1fy/08372810093-e3.jpg"
+    ]
   },
   {
     "id": 48,
@@ -624,7 +656,7 @@
     "discount": 0,
     "color": "Azul",
     "mainImage": "https://i.postimg.cc/5tPjxbbq/05174539422-e1.jpg",
-        "images": [
+    "images": [
       "https://i.postimg.cc/hvPXzHcR/05174539422-a1.jpg",
       "https://i.postimg.cc/L6WJ5CWG/05174539422-e3.jpg"
     ]
@@ -641,7 +673,7 @@
     "discount": 10,
     "color": "Celeste",
     "mainImage": "https://i.postimg.cc/SNy0G8WR/01889069427-e1.jpg",
-            "images": [
+    "images": [
       "https://i.postimg.cc/5tdjqHb3/01889069427-a1.jpg",
       "https://i.postimg.cc/85T59qFf/01889069427-e3.jpg"
     ]
