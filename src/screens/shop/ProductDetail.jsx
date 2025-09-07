@@ -91,22 +91,19 @@ const ProductDetail = () => {
       <View style={styles.container}>
         <AccordionItem
           title="COMPOSICIÓN & CUIDADOS"
-          content="
-Los lavados a bajas temperaturas y los programas de centrifugado suaves son más delicados con las prendas, ayudando a mantener el color, la forma y la estructura del tejido. Al mismo tiempo, reduce el consumo de energía que se utiliza en los procesos de cuidado. 
-
-"
+          content=" Los lavados a bajas temperaturas y los programas de centrifugado suaves son más delicados con las prendas, ayudando a mantener el color, la forma y la estructura del tejido. Al mismo tiempo, reduce el consumo de energía que se utiliza en los procesos de cuidado."
         />
         <AccordionItem
           title="ENVÍO, CAMBIOS Y DEVOLUCIONES"
           content="Devoluciones gratis en un plazo de 30 días. ENVÍO A UNA TIENDA - GRATUITO
-Entrega en 2-4 días laborables.
-ENVÍO A DOMICILIO
-Entrega en 2-6 días laborables - 3.000,00 ARS
-El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
-Entrega en 1-2 días laborables - 5.000,00 ARS
-ENVÍO A PUNTO DE ENTREGA  - 3.000,00 ARS
-El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
-Entrega en 2-6 días laborables."
+          Entrega en 2-4 días laborables.
+          ENVÍO A DOMICILIO
+          Entrega en 2-6 días laborables - 3.000,00 ARS
+          El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
+          Entrega en 1-2 días laborables - 5.000,00 ARS
+          ENVÍO A PUNTO DE ENTREGA  - 3.000,00 ARS
+          El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
+          Entrega en 2-6 días laborables."
         />
       </View>
 
