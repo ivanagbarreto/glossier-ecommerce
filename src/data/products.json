@@ -272,7 +272,11 @@
     "category": "abrigos",
     "discount": 10,
     "color": "Ocre",
-    "mainImage": "https://i.postimg.cc/g0dX9P5s/04341704743-e1.jpg"
+    "mainImage": "https://i.postimg.cc/g0dX9P5s/04341704743-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/cHfjjLg0/04341704743-p.jpg",
+      "https://i.postimg.cc/j2K9rYPN/04341704743-e3.jpg"
+    ]
   },
   {
     "id": 22,
@@ -285,7 +289,11 @@
     "category": "abrigos",
     "discount": 10,
     "color": "Ocre y marrón",
-    "mainImage": "https://i.postimg.cc/ncbQK7kN/04341976703-510-e1.jpg"
+    "mainImage": "https://i.postimg.cc/ncbQK7kN/04341976703-510-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/YSdBR9WV/03909907700-p.jpg",
+      "https://i.postimg.cc/6qvsBfmJ/03909907700-e3.jpg"
+    ]
   },
   {
     "id": 23,
@@ -298,7 +306,11 @@
     "category": "abrigos",
     "discount": 7,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/BQKXX6fN/04088055710-e1.jpg"
+    "mainImage": "https://i.postimg.cc/BQKXX6fN/04088055710-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/D0jWKFHY/05854900712-p.jpg",
+      "https://i.postimg.cc/G3qTDJtJ/05854900712-e3.jpg"
+    ]
   },
   {
     "id": 24,
