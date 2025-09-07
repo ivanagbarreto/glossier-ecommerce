@@ -311,7 +311,11 @@
     "category": "remeras",
     "discount": 5,
     "color": "Vino",
-    "mainImage": "https://i.postimg.cc/d0vbGWkD/04764220660-e1.jpg"
+    "mainImage": "https://i.postimg.cc/d0vbGWkD/04764220660-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/LXkfwcmr/04764220660-a3.jpg",
+      "https://i.postimg.cc/4yBcNp7P/04764220660-p.jpg"
+    ]
   },
   {
     "id": 25,
@@ -324,7 +328,11 @@
     "category": "remeras",
     "discount": 10,
     "color": "Beige",
-    "mainImage": "https://i.postimg.cc/y8NQKwZm/chalecocuadros.jpg"
+    "mainImage": "https://i.postimg.cc/y8NQKwZm/chalecocuadros.jpg",
+    "images": [
+      "https://i.postimg.cc/SNS7Fx2V/08372910743-p.jpg",
+      "https://i.postimg.cc/QdVQCYqT/08372910743-e3.jpg"
+    ]
   },
   {
     "id": 26,
@@ -337,7 +345,11 @@
     "category": "remeras",
     "discount": 8,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/P5NpT4rp/00881018800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/P5NpT4rp/00881018800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/VkHFFPNg/00881018800-a2.jpg",
+      "https://i.postimg.cc/FKMg2b3J/00881018800-e3.jpg"
+    ]
   },
   {
     "id": 27,
@@ -350,7 +362,11 @@
     "category": "remeras",
     "discount": 12,
     "color": "Marrón",
-    "mainImage": "https://i.postimg.cc/mD3h8pVq/06236014700-e1.jpg"
+    "mainImage": "https://i.postimg.cc/mD3h8pVq/06236014700-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/VNpDzPQv/06236014700-p.jpg",
+      "https://i.postimg.cc/4Nswf1M6/06236014700-e3.jpg"
+    ]
   },
   {
     "id": 28,
@@ -363,7 +379,11 @@
     "category": "abrigos",
     "discount": 10,
     "color": "Gris oscuro",
-    "mainImage": "https://i.postimg.cc/W3Z1tWQz/03736918922-e1.jpg"
+    "mainImage": "https://i.postimg.cc/W3Z1tWQz/03736918922-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/Kjn99qWz/03736918922-a1.jpg",
+      "https://i.postimg.cc/X7b1ZWZy/03736918922-e3.jpg"
+    ]
   },
   {
     "id": 29,
@@ -376,7 +396,11 @@
     "category": "sweaters",
     "discount": 5,
     "color": "Azul Petroleo",
-    "mainImage": "https://i.postimg.cc/P5TW6WyL/02488851200-e1.jpg"
+    "mainImage": "https://i.postimg.cc/P5TW6WyL/02488851200-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/MptL2Lpf/02488851200-p.jpg",
+      "https://i.postimg.cc/TPw4RcK7/02488851200-e3.jpg"
+    ]
   },
   {
     "id": 30,
@@ -389,7 +413,11 @@
     "category": "sweaters",
     "discount": 10,
     "color": "Granate",
-    "mainImage": "https://i.postimg.cc/FRyFnLDR/02893100605-e1.jpg"
+    "mainImage": "https://i.postimg.cc/FRyFnLDR/02893100605-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/QMG3Cwr4/02893102605-p.jpg",
+      "https://i.postimg.cc/RZwYs0jd/02893100605-e2.jpg"
+    ]
   },
   {
     "id": 31,
@@ -402,7 +430,11 @@
     "category": "sweaters",
     "discount": 8,
     "color": "Azul y blanco",
-    "mainImage": "https://i.postimg.cc/gJF9v80M/02142017044-e1.jpg"
+    "mainImage": "https://i.postimg.cc/gJF9v80M/02142017044-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/k5cxDrbq/02142017044-a1.jpg",
+      "https://i.postimg.cc/Gp5vvFq5/02142017044-e3.jpg"
+    ]
   },
   {
     "id": 32,
@@ -414,8 +446,12 @@
     "brand": "Zara",
     "category": "sweaters",
     "discount": 15,
-    "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/MTfLfpVb/03471801250-e1.jpg"
+    "color": "Blanco",
+    "mainImage": "https://i.postimg.cc/MTfLfpVb/03471801250-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/5t10H6BF/03471801250-e2.jpg",
+      "https://i.postimg.cc/nhnrrXY9/03471801250-e3.jpg"
+    ]
   },
   {
     "id": 33,
@@ -428,7 +464,11 @@
     "category": "sweaters",
     "discount": 20,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/tTXZCZHc/04192803712-e1.jpg"
+    "mainImage": "https://i.postimg.cc/tTXZCZHc/04192803712-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/VLfPbnpw/04192803712-e2.jpg",
+      "https://i.postimg.cc/6pTsMwB1/04192803712-e3.jpg"
+    ]
   },
   {
     "id": 34,
@@ -441,7 +481,11 @@
     "category": "jeans",
     "discount": 5,
     "color": "Gris",
-    "mainImage": "https://i.postimg.cc/qqKWgRrP/03607029802-e1.jpg"
+    "mainImage": "https://i.postimg.cc/qqKWgRrP/03607029802-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/dtTgz6bJ/03607029802-p.jpg",
+      "https://i.postimg.cc/VkzQnMh1/03607029802-e3.jpg"
+    ]
   },
   {
     "id": 35,
@@ -454,7 +498,11 @@
     "category": "jeans",
     "discount": 10,
     "color": "Vino",
-    "mainImage": "https://i.postimg.cc/4NhS1nrq/08246974681-e1.jpg"
+    "mainImage": "https://i.postimg.cc/4NhS1nrq/08246974681-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/59ptX4yX/08246974681-p.jpg",
+      "https://i.postimg.cc/X7JYFRBQ/08246974681-e3.jpg"
+    ]
   },
   {
     "id": 36,
@@ -467,7 +515,11 @@
     "category": "jeans",
     "discount": 7,
     "color": "Verde militar",
-    "mainImage": "https://i.postimg.cc/YCLMYp3C/04887008505-e1.jpg"
+    "mainImage": "https://i.postimg.cc/YCLMYp3C/04887008505-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/SK8sRcY4/04887008505-e1.jpg",
+      "https://i.postimg.cc/0QsNwr7w/04887008505-e3.jpg"
+    ]
   },
   {
     "id": 37,
@@ -480,7 +532,11 @@
     "category": "jeans",
     "discount": 15,
     "color": "Azul oscuro",
-    "mainImage": "https://i.postimg.cc/FFS6yYtq/07223258400-e1.jpg"
+    "mainImage": "https://i.postimg.cc/FFS6yYtq/07223258400-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/SRGYsC5R/07223049405-p.jpg",
+      "https://i.postimg.cc/c496bxGp/07223049405-e3.jpg"
+    ]
   },
   {
     "id": 38,
@@ -493,7 +549,11 @@
     "category": "jeans",
     "discount": 10,
     "color": "Crudo",
-    "mainImage": "https://i.postimg.cc/Gt3byGMW/07223025711-e1.jpg"
+    "mainImage": "https://i.postimg.cc/Gt3byGMW/07223025711-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/c4MBg8YQ/08246046718-a3.jpg",
+      "https://i.postimg.cc/Z5bFrKFX/08246046718-e3.jpg"
+    ]
   },
   {
     "id": 39,
@@ -506,7 +566,11 @@
     "category": "jeans",
     "discount": 12,
     "color": "Celeste",
-    "mainImage": "https://i.postimg.cc/bv2ryxML/02829002406-e1.jpg"
+    "mainImage": "https://i.postimg.cc/bv2ryxML/02829002406-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/V6xWMqDF/02829002406-e2.jpg",
+      "https://i.postimg.cc/cHgcr9MH/02829002406-e3.jpg"
+    ]
   },
   {
     "id": 40,
