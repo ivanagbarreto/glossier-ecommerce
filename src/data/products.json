@@ -10,7 +10,11 @@
     "category": "vestidos",
     "discount": 5,
     "color": "Blanco",
-    "mainImage": "https://i.postimg.cc/wTZJtLmt/03152389250-e1.jpg"
+    "mainImage": "https://i.postimg.cc/wTZJtLmt/03152389250-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/mDKRHz33/03152389250-p.jpg",
+      "https://i.postimg.cc/9Fr8kghf/03152389250-e3-1.jpg"
+    ]
   },
   {
     "id": 2,
@@ -23,7 +27,11 @@
     "category": "vestidos",
     "discount": 40,
     "color": "Granate",
-    "mainImage": "https://i.postimg.cc/PqLsKLf8/03484982605-e1.jpg"
+    "mainImage": "https://i.postimg.cc/PqLsKLf8/03484982605-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/0Nwjbnx2/03484982605-p.jpg",
+      "https://i.postimg.cc/6pD5JZRs/03484982605-e3.jpg"
+    ]
   },
   {
     "id": 3,
@@ -36,20 +44,28 @@
     "category": "vestidos",
     "discount": 10,
     "color": "Azul marino",
-    "mainImage": "https://i.postimg.cc/mkVvXT7q/03527554401-e1.jpg"
+    "mainImage": "https://i.postimg.cc/mkVvXT7q/03527554401-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/g2GHywrW/09897554401-p.jpg",
+      "https://i.postimg.cc/DfsrtQXh/03527554401-e3.jpg"
+    ]
   },
   {
     "id": 4,
     "title": "Vestido HALTER",
     "shortDescription": "Vestido corto confeccionado en tejido con textura.",
     "longDescription": "Cuello halter y escote recto. Cierre en espalda con cremallera oculta en costura.",
-    "price": 125.0,
+    "price": 125000,
     "stock": 10,
     "brand": "Zara",
     "category": "vestidos",
     "discount": 5,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/pdfcM8sn/03486731800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/pdfcM8sn/03486731800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/YS57ZB5t/03486731800-a1.jpg",
+      "https://i.postimg.cc/bNyhKTBS/03486731800-e3.jpg"
+    ]
   },
   {
     "id": 5,
@@ -62,7 +78,11 @@
     "category": "vestidos",
     "discount": 5,
     "color": "Beige y blanco",
-    "mainImage": "https://i.postimg.cc/DZ6pFBm4/vestidomini.jpg"
+    "mainImage": "https://i.postimg.cc/DZ6pFBm4/vestidomini.jpg",
+    "images": [
+      "https://i.postimg.cc/9MD4t2GV/03948555708-e2.jpg",
+      "https://i.postimg.cc/Fs5fc215/03948555708-e3.jpg"
+    ]
   },
   {
     "id": 6,
@@ -77,8 +97,8 @@
     "color": "Negro",
     "mainImage": "https://i.postimg.cc/2yB6qyGs/04786115800-e1.jpg",
     "images": [
-      "https://i.postimg.cc/mgt9BdY6/00779055400-p.jpg",
-      "https://i.postimg.cc/52TC0wp9/00779055400-e3.jpg"
+      "https://i.postimg.cc/7Y6hrwCk/04786115800-a3.jpg",
+      "https://i.postimg.cc/PqhNcZY6/04786115800-e3.jpg"
     ]
   },
 
