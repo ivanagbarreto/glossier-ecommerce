@@ -75,7 +75,11 @@
     "category": "vestidos",
     "discount": 5,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/2yB6qyGs/04786115800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/2yB6qyGs/04786115800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/mgt9BdY6/00779055400-p.jpg",
+      "https://i.postimg.cc/52TC0wp9/00779055400-e3.jpg"
+    ]
   },
 
   {
@@ -89,7 +93,11 @@
     "category": "vestidos",
     "discount": 10,
     "color": "Azul",
-    "mainImage": "https://i.postimg.cc/WbD3F4gt/denim.jpg"
+    "mainImage": "https://i.postimg.cc/WbD3F4gt/denim.jpg",
+    "images": [
+      "https://i.postimg.cc/mgt9BdY6/00779055400-p.jpg",
+      "https://i.postimg.cc/52TC0wp9/00779055400-e3.jpg"
+    ]
   },
   {
     "id": 8,
@@ -102,20 +110,28 @@
     "category": "vestidos",
     "discount": 5,
     "color": "Blanco",
-    "mainImage": "https://i.postimg.cc/br4qHQkr/00085810251-e1.jpg"
+    "mainImage": "https://i.postimg.cc/br4qHQkr/00085810251-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/kXysBhtJ/00085810251-a1.jpg",
+      "https://i.postimg.cc/kgXc8Fxx/00085810251-e3.jpg"
+    ]
   },
   {
     "id": 9,
     "title": "Vestido CORTO",
     "shortDescription": "Vestido corto de cuello halter con lazada. ",
     "longDescription": "Bolsillos laterales ocultos en costura. Forro interior combinado. Cierre en espalda con cremallera oculta en costura.",
-    "price": 99.9,
+    "price": 139000,
     "stock": 18,
     "brand": "Zara",
     "category": "vestidos",
     "discount": 0,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/pLfPz5TV/04661279800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/pLfPz5TV/04661279800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/pV61PS8g/04661279800-a1.jpg",
+      "https://i.postimg.cc/ZRyjnb62/04661279800-e3.jpg"
+    ]
   },
   {
     "id": 10,
@@ -128,20 +144,28 @@
     "category": "vestidos",
     "discount": 10,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/KvvPdRYq/07774732800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/KvvPdRYq/07774732800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/MHFL4PbJ/07774732800-p.jpg",
+      "https://i.postimg.cc/FsY8cvNr/07774732800-e2.jpg"
+    ]
   },
   {
     "id": 11,
     "title": "Vestido MIDI ENTALLADO",
     "shortDescription": "Vestido midi confeccionado en hilatura con mezcla de algodón.",
     "longDescription": "Escote redondo y tirantes finos ajustables. Bajo acabado con abertura. Cierre en espalda con cremallera oculta en costura.",
-    "price": 139.0,
+    "price": 139000,
     "stock": 10,
     "brand": "Zara",
     "category": "vestidos",
     "discount": 5,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/5ttNJN4x/09479070800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/5ttNJN4x/09479070800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/fLM100Tp/09479070800-p.jpg",
+      "https://i.postimg.cc/k4wzNX24/09479070800-e3.jpg"
+    ]
   },
   {
     "id": 12,
@@ -154,7 +178,11 @@
     "category": "vestidos",
     "discount": 30,
     "color": "Beige",
-    "mainImage": "https://i.postimg.cc/Wzcvd2vq/00881362017-e1.jpg"
+    "mainImage": "https://i.postimg.cc/Wzcvd2vq/00881362017-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/1Rv1wMFH/00881362017-p.jpg",
+      "https://i.postimg.cc/3xvMMTcS/00881362017-e3.jpg"
+    ]
   },
   {
     "id": 13,
@@ -167,7 +195,11 @@
     "category": "vestidos",
     "discount": 15,
     "color": "Blanco",
-    "mainImage": "https://i.postimg.cc/Dfr4f0Qh/lencero.jpg"
+    "mainImage": "https://i.postimg.cc/Dfr4f0Qh/lencero.jpg",
+    "images": [
+      "https://i.postimg.cc/jSwTsNLh/07462731251-p.jpg",
+      "https://i.postimg.cc/D0wVR49L/07462731251-e2.jpg"
+    ]
   },
 
   {
@@ -181,7 +213,11 @@
     "category": "abrigos",
     "discount": 10,
     "color": "Tostado",
-    "mainImage": "https://i.postimg.cc/GppYfC6D/05063716704-e1.jpg"
+    "mainImage": "https://i.postimg.cc/GppYfC6D/05063716704-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/fLhDqLWf/05063716704-a2.jpg",
+      "https://i.postimg.cc/GtLrr5yB/05063716704-e3.jpg"
+    ]
   },
   {
     "id": 15,
@@ -194,7 +230,11 @@
     "category": "abrigos",
     "discount": 5,
     "color": "Marrón",
-    "mainImage": "https://i.postimg.cc/RF7H6ZHj/08372054700-e1.jpg"
+    "mainImage": "https://i.postimg.cc/RF7H6ZHj/08372054700-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/wxQTPhmy/08372054700-a3.jpg",
+      "https://i.postimg.cc/CLMLVzGv/08372054700-e3.jpg"
+    ]
   },
   {
     "id": 16,
@@ -207,7 +247,11 @@
     "category": "abrigos",
     "discount": 15,
     "color": "Negro",
-    "mainImage": "https://i.postimg.cc/Dy2qGL55/04749716800-e1.jpg"
+    "mainImage": "https://i.postimg.cc/Dy2qGL55/04749716800-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/rpRwY31M/04749716800-p.jpg",
+      "https://i.postimg.cc/Y91qtFDP/04749716800-e3.jpg"
+    ]
   },
   {
     "id": 17,
@@ -220,20 +264,28 @@
     "category": "abrigos",
     "discount": 10,
     "color": "Gris",
-    "mainImage": "https://i.postimg.cc/RVsnn8WV/03046020803-e1.jpg"
+    "mainImage": "https://i.postimg.cc/RVsnn8WV/03046020803-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/cCRKk2Nr/03046020803-a1.jpg",
+      "https://i.postimg.cc/MpKct93p/03046020803-e2.jpg"
+    ]
   },
   {
     "id": 18,
-    "title": "Abrigo BOTONES",
-    "shortDescription": "Abrigo de cuello solapa y manga larga.",
-    "longDescription": "Bolsillos con solapa en delantero. Cierre frontal con botones.",
+    "title": "TRENCH SEMILARGO",
+    "shortDescription": "Trench de cuello solapa y manga larga. ",
+    "longDescription": "Bolsillos delanteros de vivo. Detalle de cinturón del mismo tejido. Cierre frontal cruzado con botones.",
     "price": 175990,
     "stock": 18,
     "brand": "H&M",
     "category": "abrigos",
     "discount": 5,
-    "color": "Gris",
-    "mainImage": "https://i.postimg.cc/bNcqV94H/gris.jpg"
+    "color": "Beige",
+    "mainImage": "https://i.postimg.cc/TwQjhzBn/04968027710-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/8c5RvyV9/04968027710-p.jpg",
+      "https://i.postimg.cc/T3mrnLZd/04968027710-e3.jpg"
+    ]
   },
   {
     "id": 19,
@@ -246,7 +298,11 @@
     "category": "abrigos",
     "discount": 8,
     "color": "Gris",
-    "mainImage": "https://i.postimg.cc/FKqMd94g/07519284802-e1.jpg"
+    "mainImage": "https://i.postimg.cc/FKqMd94g/07519284802-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/x1bPgFbS/07519284802-e2.jpg",
+      "https://i.postimg.cc/3wXFQ4BS/07519284802-e3.jpg"
+    ]
   },
   {
     "id": 20,
@@ -259,7 +315,11 @@
     "category": "abrigos",
     "discount": 12,
     "color": "Azul",
-    "mainImage": "https://i.postimg.cc/L5hgyB7M/00108221427-e1.jpg"
+    "mainImage": "https://i.postimg.cc/L5hgyB7M/00108221427-e1.jpg",
+    "images": [
+      "https://i.postimg.cc/3NnL54K5/00108221427-p.jpg",
+      "https://i.postimg.cc/jd38M7gy/00108221427-e3.jpg"
+    ]
   },
   {
     "id": 21,
