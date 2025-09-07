@@ -38,7 +38,8 @@ const Categories = ({navigation}) => {
         <FlatCard style={styles.container}>
           
           <RobotoCondensedText style={styles.itemTitle}> {item.title}</RobotoCondensedText>
-          <Icon name={item.icon} size={15} color={colors.darkGray} marginLeft="auto" />
+          <Icon name="chevron-right"size={15} color={colors.darkGray} marginLeft="auto" style={item.icon}/>
+          
         </FlatCard>
       </View>
     </Pressable>

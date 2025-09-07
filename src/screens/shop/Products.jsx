@@ -51,9 +51,11 @@ const Products = ({ navigation }) => {
       onPress={() => handleSelectProduct(item)}
     >
       <Image source={{ uri: item.mainImage }} style={styles.image} />
+
       <RobotoCondensedText style={styles.title}>
         {item.title}
       </RobotoCondensedText>
+
       <Text style={styles.price}>${item.price}</Text>
     </Pressable>
   );
