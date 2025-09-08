@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 18,
-    fontWeight: "700",
+    
   },
   content: {
     marginTop: 8,
@@ -54,5 +54,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     color: "#555",
+      lineHeight: 20,
   },
 });
