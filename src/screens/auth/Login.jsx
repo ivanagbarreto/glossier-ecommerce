@@ -40,7 +40,7 @@ const LoginScreen = ({ navigation, route }) => {
         />
       </View>
       <View style={styles.footTextContainer}>
-        <Text style={styles.whiteText}>¿No tienes una cuenta?</Text>
+        <Text style={styles.blackText}>¿No tienes una cuenta?</Text>
         <Pressable onPress={() => navigation.navigate("Signup")}>
           <Text
             style={{
@@ -57,7 +57,7 @@ const LoginScreen = ({ navigation, route }) => {
         <Text style={styles.btnText}>Iniciar sesión</Text>
       </Pressable>
       <View style={styles.rememberMe}>
-        <Text style={{ color: colors.black, padding:8 }}>¿Mantener sesión iniciada?</Text>
+        <Text style={{ color: colors.black, padding:8,fontFamily: "RobotoCondensed-Regular" }}>¿Mantener sesión iniciada?</Text>
       </View>
     </View>
   );
@@ -103,13 +103,15 @@ const styles = StyleSheet.create({
     marginBottom: 20,           
     paddingVertical: 8,
     width: "85%",
+    fontFamily: "RobotoCondensed-Regular",
   },
   footTextContainer: {
     flexDirection: "row",
     gap: 8,
   },
-  whiteText: {
+blackText: {
     color: colors.black,
+    fontFamily: "RobotoCondensed-Regular",
   },
   underLineText: {
     textDecorationLine: "underline",
