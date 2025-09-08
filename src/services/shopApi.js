@@ -1,13 +1,18 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const rtbdBaseURL = process.env.EXPO_PUBLIC_RTDB_URL
+const rtbdBaseUrl = process.env.EXPO_PUBLIC_RTDB_URL
 
 export const shopApi = createApi({
     reducerPath: "shopApi",
-    baseQuery: fetchBaseQuery ({ baseUrl: rtbdBaseURL }),
+    baseQuery: fetchBaseQuery ({ baseUrl: "https://fashion-ecommerce-faf28-default-rtdb.firebaseio.com/" }),
     endpoints:(builder)=>({
-        getCategories:builder.query({query:()=> "categories.json"}),
+        getCategories: builder.query({query:()=> 'categories.json'}),
+        getProductsByCategory: builder.query({
+            query:(category)=> `products.json?orderBy="category"&equalTo="${category}"`,transformResponse: (response) => {
+            return Object.values(response)
+        }})
+        
     })
 
 })
-export const { useGetCategoriesQuery } = shopApi
+export const { useGetCategoriesQuery, useGetProductsByCategoryQuery } = shopApi

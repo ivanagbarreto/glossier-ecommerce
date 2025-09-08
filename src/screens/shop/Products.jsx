@@ -7,13 +7,14 @@ import {
   Image,
   Dimensions,
 } from "react-native";
-import products from "../../data/products.json";
+//import products from "../../data/products.json";
 import { useEffect, useState } from "react";
 import RobotoCondensedText from "../../components/RobotoCondensedFont";
 import Search from "../../components/Search";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedProduct } from "../../store/slices/shopSlice";
 import { colors } from "../../global/colors";
+import { useGetProductsByCategoryQuery } from "../../services/shopApi";
 
 const screenWidth = Dimensions.get("window").width;
 const numColumns = 2;
@@ -24,6 +25,10 @@ const Products = ({ navigation }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [keyword, setKeyword] = useState("");
   const category = useSelector((state) => state.shopReducer.selectedCategory);
+
+  const {data:categoryProducts, isLoading, error} = useGetProductsByCategoryQuery(category.toLowerCase())
+
+
   const dispatch = useDispatch();
 
   const handleSelectProduct = (product) => {
@@ -32,9 +37,9 @@ const Products = ({ navigation }) => {
   };
 
   useEffect(() => {
-    const categoryProducts = products.filter(
+   {/*  const categoryProducts = products.filter(
       (product) => product.category.toLowerCase() === category.toLowerCase()
-    );
+    );*/}
     if (keyword) {
       const productsByKeyword = categoryProducts.filter((product) =>
         product.title.toLowerCase().includes(keyword.toLowerCase())
@@ -43,7 +48,7 @@ const Products = ({ navigation }) => {
     } else {
       setFilteredProducts(categoryProducts);
     }
-  }, [category, keyword]);
+  }, [categoryProducts,category, keyword]);
 
   const renderProductItem = ({ item }) => (
     <Pressable
