@@ -4,8 +4,8 @@ import * as SplashScreen from "expo-splash-screen";
 import { StyleSheet, ImageBackground, View } from "react-native";
 import Header from "./src/components/Header";
 import { useState, useEffect } from "react";
-import { NavigationContainer, TabActions } from "@react-navigation/native";
-import TabsNavigator from "./src/navigation/tabs/TabsNavigator";
+
+import MainNavigator from "./src/navigation/MainNavigator";
 import { colors } from "./src/global/colors";
 import { Provider } from "react-redux";
 import {store} from "./src/store"
@@ -33,7 +33,7 @@ export default function App() {
   }
   return (
     <Provider store={store}>
-      <NavigationContainer>
+  
         <ImageBackground
           source={require("./assets/background.jpeg")}
           style={styles.container}
@@ -41,9 +41,9 @@ export default function App() {
         >
           <StatusBar backgroundColor={colors.lightGray} />
 
-          <TabsNavigator />
+          <MainNavigator />
         </ImageBackground>
-      </NavigationContainer>
+      
     </Provider>
   );
 }
