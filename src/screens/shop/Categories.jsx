@@ -18,9 +18,16 @@ import RobotoCondensedText from "../../components/RobotoCondensedFont";
 import Icon from "react-native-vector-icons/Feather";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedCategory } from "../../store/slices/shopSlice";
+import { useGetCategoriesQuery } from "../../services/shopApi";
+
 
 const Categories = ({navigation}) => {
-    const  productCategories = useSelector (state =>state.shopReducer.productCategories)
+
+
+    //const  productCategories = useSelector (state =>state.shopReducer.productCategories)
+
+    const{data:productCategories, isLoading, error} = useGetCategoriesQuery()
+
 
     const dispatch = useDispatch ()
 
@@ -28,6 +35,10 @@ const Categories = ({navigation}) => {
         dispatch(setSelectedCategory(category))
         navigation.navigate("Productos")
     }
+
+    if (isLoading) return <Text>Cargando...</Text>
+  if (error) return <Text>Error: {JSON.stringify(error)}</Text>
+  if (!productCategories) return <Text>No hay categorías</Text>
 
 
   const renderCategoryItem = ({ item }) => {
