@@ -9,16 +9,29 @@ import {
 } from "react-native";
 import { colors } from "../../global/colors";
 import { useEffect, useState } from "react";
+import { useLoginMutation } from "../../services/authApi";
+import { useDispatch } from "react-redux";
+import { setUserEmail } from "../../store/slices/userSlice";
 
 const textInputWidth = Dimensions.get("window").width * 0.7;
 
 const LoginScreen = ({ navigation, route }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [triggerLogin, result] = useLoginMutation();
+
+  const dispatch = useDispatch();
 
   const onsubmit = () => {
-    return;
+    triggerLogin({ email, password });
   };
+
+ useEffect(() => {
+    if (result.status === "fulfilled") {
+      dispatch(setUserEmail(result.data.email));
+   
+    }
+  }, [result]);
 
   return (
     <View style={styles.container}>
