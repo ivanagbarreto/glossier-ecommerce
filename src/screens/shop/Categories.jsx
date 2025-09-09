@@ -19,7 +19,7 @@ import Icon from "react-native-vector-icons/Feather";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedCategory } from "../../store/slices/shopSlice";
 import { useGetCategoriesQuery } from "../../services/shopApi";
-
+import { ActivityIndicator} from "react-native";
 
 const Categories = ({navigation}) => {
 
@@ -36,10 +36,16 @@ const Categories = ({navigation}) => {
         navigation.navigate("Productos")
     }
 
-    if (isLoading) return <Text>Cargando...</Text>
-  if (error) return <Text>Error: {JSON.stringify(error)}</Text>
-  if (!productCategories) return <Text>No hay categorías</Text>
+    if (isLoading) {
+  return (
+    <View style={styles.loaderContainer}>
+      <ActivityIndicator size="large" color="#f2cad0ff" />
+    </View>
+  );
+}
 
+if (error) return <Text>Error: {JSON.stringify(error)}</Text>;
+if (!productCategories) return <Text>No hay categorías</Text>;
 
   const renderCategoryItem = ({ item }) => {
     return(
@@ -71,9 +77,14 @@ export default Categories;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: colors.lightGray,
     flexDirection:"row",
    
+  },
+    loaderContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
  
  

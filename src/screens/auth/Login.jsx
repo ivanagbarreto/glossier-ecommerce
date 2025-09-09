@@ -69,9 +69,7 @@ const LoginScreen = ({ navigation, route }) => {
       <Pressable style={styles.btn} onPress={onsubmit}>
         <Text style={styles.btnText}>Iniciar sesión</Text>
       </Pressable>
-      <View style={styles.rememberMe}>
-        <Text style={{ color: colors.black, padding:8,fontFamily: "RobotoCondensed-Regular" }}>¿Mantener sesión iniciada?</Text>
-      </View>
+
     </View>
   );
 };
