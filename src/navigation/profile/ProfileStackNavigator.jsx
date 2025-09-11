@@ -11,7 +11,7 @@ const ProfileStackNavigator = () => {
       initialRouteName="Perfil"
       screenOptions={{
         header: ({route})=>(<Header title="fashion" 
-          subtitle="Profile"
+          subtitle="Perfil"
           />)
       }}
     >
