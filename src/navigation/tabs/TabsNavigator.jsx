@@ -1,6 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ShopStackNavigator from "../shop/ShopStackNavigator";
 import CartStackNavigator from "../cart/CartStackNavigator";
+import ProfileStackNavigator from "../profile/ProfileStackNavigator";
 import Icon from "react-native-vector-icons/Feather";
 import { colors } from "../../global/colors";
 import { StyleSheet } from "react-native";
@@ -36,6 +37,19 @@ const TabsNavigator = () => {
           tabBarIcon: ({ focused }) => (
             <Icon
               name="shopping-cart"
+              size={20}
+              color={focused ? colors.darkGray : colors.black}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileStackNavigator}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <Icon
+              name="user"
               size={20}
               color={focused ? colors.darkGray : colors.black}
             />
