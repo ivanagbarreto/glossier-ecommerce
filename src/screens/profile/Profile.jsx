@@ -11,11 +11,18 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CameraIcon from "../../components/CameraIcon";
 import * as ImagePicker from 'expo-image-picker';
+import { usePutProfilePictureMutation } from "../../services/profileApi";
+import { setImage } from "../../store/slices/userSlice";
+
 
 const Profile = () => {
-  const [image, setImage] = useState("");
+  
   const user = useSelector((state) => state.userReducer.email);
+const localId =  useSelector((state) => state.userReducer.localId);
+const image = useSelector((state) => state.userReducer.image);
+const [triggerPutProfilePicture, result] = usePutProfilePictureMutation()
 
+console.log("resultado", localId)
   const dispatch = useDispatch();
   const pickImage = async ()=>{
     let result = await ImagePicker.launchCameraAsync({
@@ -27,7 +34,8 @@ const Profile = () => {
     })
     if (!result.canceled) {
          const imgBase64 = `data:image/jpeg;base64,${result.assets[0].base64}`
-         setImage (imgBase64)
+         dispatch(setImage (imgBase64))
+         triggerPutProfilePicture({ localId: localId, image: imgBase64 })
     }
   }
 
