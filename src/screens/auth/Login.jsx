@@ -12,11 +12,13 @@ import { useEffect, useState } from "react";
 import { useLoginMutation } from "../../services/authApi";
 import { useDispatch } from "react-redux";
 import { setUserEmail, setLocalId } from "../../store/slices/userSlice";
+import { saveSession, clearSession } from "../../database";
 
 const textInputWidth = Dimensions.get("window").width * 0.7;
 
 const LoginScreen = ({ navigation, route }) => {
   const [email, setEmail] = useState("");
+  const [persistSession, setPersistSession] = useState(false);
   const [password, setPassword] = useState("");
   const [triggerLogin, result] = useLoginMutation();
 
@@ -26,12 +28,28 @@ const LoginScreen = ({ navigation, route }) => {
     triggerLogin({ email, password });
   };
 
- useEffect(() => {
-    if (result.status === "fulfilled") {
-      dispatch(setUserEmail(result.data.email));
-      dispatch(setLocalId(result.data.localId));
-   
-    }
+  useEffect(() => {
+    (async () => {
+      if (result.status === "fulfilled") {
+        
+        try {
+             if (persistSession) {
+                        await saveSession(result.data.localId, result.data.email);
+                        dispatch(setUserEmail(result.data.email))
+                        dispatch(setLocalId(result.data.localId))
+                    } else {
+                      
+                        await clearSession();
+                        
+                    
+                    }
+
+
+        } catch (error) {
+          console.log("Error al guardar sesión:", error);
+        }
+      }
+    })();
   }, [result]);
 
   return (
@@ -71,6 +89,17 @@ const LoginScreen = ({ navigation, route }) => {
         <Text style={styles.btnText}>Iniciar sesión</Text>
       </Pressable>
 
+      <View style={styles.persistSession}>
+        <Text style={{ color: colors.darkGray }}>
+          ¿Mantener sesión iniciada?
+        </Text>
+        <Switch
+          onValueChange={() => setPersistSession(!persistSession)}
+          value={persistSession}
+          trackColor={{ false: "#C0C0C0", true: "#f2cad0ff" }}
+          thumbColor={persistSession ? "#D28695" : "#ffffff"}
+        />
+      </View>
     </View>
   );
 };
@@ -104,15 +133,15 @@ const styles = StyleSheet.create({
     margin: 16,
     marginTop: 48,
     alignItems: "center",
-    width: "100%", 
+    width: "100%",
     paddingHorizontal: 20,
   },
   textInput: {
     padding: 8,
     paddingLeft: 16,
-    borderBottomWidth: 1,      
-    borderBottomColor: colors.darkGray,  
-    marginBottom: 20,           
+    borderBottomWidth: 1,
+    borderBottomColor: colors.darkGray,
+    marginBottom: 20,
     paddingVertical: 8,
     width: "85%",
     fontFamily: "RobotoCondensed-Regular",
@@ -121,7 +150,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 8,
   },
-blackText: {
+  blackText: {
     color: colors.black,
     fontFamily: "RobotoCondensed-Regular",
   },
@@ -155,7 +184,8 @@ blackText: {
     borderRadius: 8,
     color: colors.white,
   },
-  rememberMe: {
+
+  persistSession: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
