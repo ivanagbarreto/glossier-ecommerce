@@ -17,8 +17,10 @@ import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 
 const Profile = () => {
-  const [location, setLocation] = useState(null);
-  const [errorMsg, setErrorMsg] = useState(null);
+  const [location, setLocation] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [address, setAddress] = useState("");
+  const [locationLoader, setLocationLoader] = useState(false);
 
   const user = useSelector((state) => state.userReducer.email);
   const localId = useSelector((state) => state.userReducer.localId);
@@ -28,7 +30,7 @@ const Profile = () => {
 
   const dispatch = useDispatch();
 
-  console.log("Locarion",location)
+  console.log("Locarion", location);
   const pickImage = async () => {
     let result = await ImagePicker.launchCameraAsync({
       mediaTypes: ["images"],
@@ -44,17 +46,30 @@ const Profile = () => {
     }
   };
 
- useEffect(() => {
+  useEffect(() => {
     async function getCurrentLocation() {
-      
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        setErrorMsg('Los permisos fueron denegados');
-        return;
-      }
+      try {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== "granted") {
+          setErrorMsg("Los permisos fueron denegados");
+          return;
+        }
 
-      let location = await Location.getCurrentPositionAsync({});
-      setLocation(location);
+        let location = await Location.getCurrentPositionAsync({});
+        if (location) {
+          const response = await fetch(
+            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.coords.latitude},${location.coords.longitude}&key=${process.env.EXPO_PUBLIC_MAPS_KEY}`
+          );
+          const data = await response.json();
+
+          setLocation(location);
+          setAddress(data.results[0].formatted_address);
+        }
+      } catch (error) {
+        console.log("Error al obtener la ubicación:", error);
+      } finally {
+        setLocationLoader(true);
+      }
     }
 
     getCurrentLocation();
@@ -87,29 +102,39 @@ const Profile = () => {
       <Text style={styles.profileData}>Email: {user}</Text>
 
       <View style={styles.mapContainer}>
-                {
-                    location
-                        ?
-                        <MapView
-                            style={styles.map}
-                            initialRegion={{
-                                latitude: location.coords.latitude,
-                                longitude: location.coords.longitude,
-                                latitudeDelta: 0.0922,
-                                longitudeDelta: 0.0421,
-                            }}
-                        >
-                            <Marker coordinate={{ "latitude": location.coords.latitude, "longitude": location.coords.longitude }} title={"Fashion"} />
-                        </MapView>
-                        :
-
+        {location ? (
+          <MapView
+            style={styles.map}
+            initialRegion={{
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }}
+          >
+            <Marker
+              coordinate={{
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude,
+              }}
+              title={"Mi ubicacion"}
+            />
+          </MapView>
+        )                      :
+                        (
+                            locationLoader
+                                ?
                                 <Text>Hubo un problema al obtener la ubicación</Text>
-
-
-                }
-
+                                :
+                                <ActivityIndicator />
+                        )}
+      </View>
+      <View style={styles.placeDescriptionContainer}>
+                <View style={styles.addressContainer}>
+                    <Text style={styles.addressTitle}>Dirección:</Text>
+                    <Text style={styles.address}>{address || ""}</Text>
+                </View>
             </View>
-     
     </View>
   );
 };
