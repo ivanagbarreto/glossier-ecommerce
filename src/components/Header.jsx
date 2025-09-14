@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     color: colors.black,
-    fontFamily: "PlayfairDisplay-Bold",
+    fontFamily:  "PlayfairDisplay-Bold",
     textTransform: "uppercase",
     letterSpacing: 2,
     margin:10,
