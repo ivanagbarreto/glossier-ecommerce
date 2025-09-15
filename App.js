@@ -19,9 +19,9 @@ export default function App() {
     "RobotoCondensed-Italic": require("./assets/fonts/RobotoCondensed-Italic.ttf"),
     "RobotoCondensed-Light": require("./assets/fonts/RobotoCondensed-Light.ttf"),
     "RobotoCondensed-Regular": require("./assets/fonts/RobotoCondensed-Regular.ttf"),
-    "PressStart2P-Regular": require("./assets/fonts/PressStart2P-Regular.ttf"),
+    
     "PlayfairDisplay-Bold":require("./assets/fonts/PlayfairDisplay-Bold.ttf"),
-    "VT323-Regular": require("./assets/fonts/VT323-Regular.ttf"),
+    
   });
   useEffect(() => {
     if (loaded || error) {

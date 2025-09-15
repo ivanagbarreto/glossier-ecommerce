@@ -99,7 +99,21 @@ const Profile = () => {
           <CameraIcon />
         </Pressable>
       </View>
-      <Text style={styles.profileData}>Email: {user}</Text>
+
+      <View style={styles.profileDataContainer}>
+     
+        <Text style={styles.profileData}>Email: </Text>
+        <Text style={styles.profileMail}> {user} </Text>
+
+      </View>
+
+      <View style={styles.placeDescriptionContainer}>
+
+        <View style={styles.addressContainer}>
+          <Text style={styles.addressTitle}>Mi dirección:</Text>
+          <Text style={styles.address}>{address || ""}</Text>
+        </View>
+      </View>
 
       <View style={styles.mapContainer}>
         {location ? (
@@ -120,21 +134,12 @@ const Profile = () => {
               title={"Mi ubicacion"}
             />
           </MapView>
-        )                      :
-                        (
-                            locationLoader
-                                ?
-                                <Text>Hubo un problema al obtener la ubicación</Text>
-                                :
-                                <ActivityIndicator />
-                        )}
+        ) : locationLoader ? (
+          <Text>Hubo un problema al obtener la ubicación</Text>
+        ) : (
+          <ActivityIndicator />
+        )}
       </View>
-      <View style={styles.placeDescriptionContainer}>
-                <View style={styles.addressContainer}>
-                    <Text style={styles.addressTitle}>Dirección:</Text>
-                    <Text style={styles.address}>{address || ""}</Text>
-                </View>
-            </View>
     </View>
   );
 };
@@ -145,7 +150,7 @@ const styles = StyleSheet.create({
   profileContainer: {
     paddingTop: 32,
     justifyContent: "center",
-    alignItems: "center",
+    margin: 16,
   },
   imageProfileContainer: {
     width: 128,
@@ -153,16 +158,16 @@ const styles = StyleSheet.create({
     borderRadius: 128,
     backgroundColor: colors.lightPink,
     justifyContent: "center",
-    alignItems: "center",
+    alignSelf: "center",
   },
   textProfilePlaceHolder: {
     color: colors.white,
     fontSize: 48,
   },
   profileData: {
-    paddingVertical: 16,
+    paddingVertical: 8,
     fontSize: 16,
-
+  fontWeight: "400",
     fontFamily: "RobotoCondensed-Regular",
   },
   cameraIcon: {
@@ -176,11 +181,12 @@ const styles = StyleSheet.create({
     borderRadius: 128,
   },
   mapContainer: {
-    width: "100%",
+    width: "70%",
     height: 240,
     overflow: "hidden",
     elevation: 5,
     marginBottom: 16,
+    alignSelf: "center",
   },
   map: {
     height: 240,
@@ -192,8 +198,23 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 16,
   },
-  ubication: {
+  addressTitle: {
     fontSize: 16,
-    fontFamily: "RobotoCondensed-Regular",
+   fontFamily: "RobotoCondensed-Regular",
+   paddingVertical: 8,
   },
+  address: {
+    fontSize: 16,
+    fontFamily: "RobotoCondensed-Light",
+    marginBottom: 8,
+  },
+  profileMail: {
+    fontSize: 16,
+    fontFamily: "RobotoCondensed-Light",
+    marginBottom: 8,
+  },
+  profileDataContainer:{
+    fontSize: 16,
+    fontFamily: "RobotoCondensed-Regular"
+  }
 });
