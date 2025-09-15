@@ -47,3 +47,14 @@ npm install
 ```bash
 npx expo start
 ```
+
+## Credenciales de prueba
+
+Para probar la funcionalidad de inicio de sesión, podes usar la siguiente cuenta:
+
+| Email | Contraseña |
+|-------|------------|
+| ivanagbarreto@gmail.com | 123456 |
+
+> Estas credenciales ya están registradas en Firebase Auth para que puedas iniciar sesión sin crear una nueva cuenta.  
+> Si no deseas usar esta cuenta, la app también permite **crear una nueva cuenta** con email y contraseña directamente desde la pantalla de registro.
