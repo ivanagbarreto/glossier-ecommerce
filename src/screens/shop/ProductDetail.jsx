@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   useWindowDimensions,
+  Modal,
 } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { colors } from "../../global/colors";
@@ -19,9 +20,10 @@ const ProductDetail = () => {
   const { width } = useWindowDimensions();
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   const handleAddToCart = () => {
     if (!selectedSize) {
-      alert("Por favor seleccioná un talle");
+      setShowModal(true);
       return;
     }
     dispatch(
@@ -91,17 +93,12 @@ const ProductDetail = () => {
       <View style={styles.container}>
         <AccordionItem
           title="COMPOSICIÓN & CUIDADOS"
-          content=" Los lavados a bajas temperaturas y los programas de centrifugado suaves son más delicados con las prendas, ayudando a mantener el color, la forma y la estructura del tejido. Al mismo tiempo, reduce el consumo de energía que se utiliza en los procesos de cuidado."
+          content=" Utilizar jabón líquido para el lavado. Evitá el uso de lavandina, cloro o detergente.
+          No planchar sobre estampas o bordados. En esos casos, hacerlo del revés. La plancha debe estar en graduación media."
         />
         <AccordionItem
           title="ENVÍO, CAMBIOS Y DEVOLUCIONES"
-          content="Devoluciones gratis en un plazo de 30 días. ENVÍO A UNA TIENDA - GRATUITO
-          Entrega en 2-4 días laborables.
-          ENVÍO A DOMICILIO
-          Entrega en 2-6 días laborables - 3.000,00 ARS
-          El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
-          Entrega en 1-2 días laborables - 5.000,00 ARS
-          ENVÍO A PUNTO DE ENTREGA  - 3.000,00 ARS
+          content="Devoluciones gratis en un plazo de 30 días. 
           El envío será gratuito a partir de 175.990,00 ARS solo para artículos sin descuento.
           Entrega en 2-6 días laborables."
         />
@@ -125,8 +122,33 @@ const ProductDetail = () => {
           )
         }
       >
-        <Text style={styles.textAddToCart}>Añadir</Text>
+        <Text style={styles.textAddToCart} onPress={handleAddToCart}>
+          Añadir
+        </Text>
       </Pressable>
+      {/********  MODAL DE ALERTA ********/}
+      <Modal
+        transparent={true}
+        visible={showModal}
+        animationType="fade"
+        onRequestClose={() => setShowModal(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalBox}>
+            <Text style={styles.modalTitle}>Atención</Text>
+            <Text style={styles.modalMessage}>
+              Por favor seleccioná un talle
+            </Text>
+
+            <Pressable
+              style={styles.modalButton}
+              onPress={() => setShowModal(false)}
+            >
+              <Text style={styles.modalButtonText}>OK</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
     </ScrollView>
   );
 };
@@ -212,8 +234,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   sizeButton: {
-    borderColor: colors.grisOscuro,
-
+    borderColor: colors.darkGray,
     paddingVertical: 8,
     paddingHorizontal: 16,
     justifyContent: "center",
@@ -233,5 +254,50 @@ const styles = StyleSheet.create({
   },
   container: {
     margin: 20,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalBox: {
+    width: "80%",
+    backgroundColor: colors.white,
+
+    padding: 24,
+    alignItems: "center",
+    elevation: 5,
+  },
+  modalTitle: {
+    fontSize: 18,
+
+    marginBottom: 8,
+    fontFamily: "RobotoCondensed-Regular",
+    textTransform: "uppercase",
+    letterSpacing: 2,
+  },
+  modalMessage: {
+    fontSize: 16,
+    textAlign: "center",
+    marginBottom: 16,
+    fontFamily: "RobotoCondensed-Regular",
+  },
+  modalButton: {
+    padding: 8,
+    paddingHorizontal: 16,
+    backgroundColor: colors.lightPink,
+    borderWidth: 1,
+    borderColor: colors.black,
+    marginVertical: 16,
+    width: "80%",
+  },
+  modalButtonText: {
+    color: colors.black,
+    fontSize: 15,
+    textAlign: "center",
+    fontFamily: "RobotoCondensed-Bold",
+    textTransform: "uppercase",
+    letterSpacing: 2,
   },
 });

@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   subtitle: {
-    fontSize: 10,
+    fontSize: 13,
     color: colors.black,
     fontFamily: "RobotoCondensed-Regular",
     textTransform: "uppercase",
