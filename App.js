@@ -35,15 +35,11 @@ export default function App() {
   return (
     <Provider store={store}>
   
-        <ImageBackground
-          source={require("./assets/background.jpeg")}
-          style={styles.container}
-          resizeMode="cover"
-        >
+
           <StatusBar backgroundColor={colors.lightGray} />
 
           <MainNavigator />
-        </ImageBackground>
+       
       
     </Provider>
   );
