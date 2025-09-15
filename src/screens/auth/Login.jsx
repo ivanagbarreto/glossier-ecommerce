@@ -28,32 +28,30 @@ const LoginScreen = ({ navigation, route }) => {
     triggerLogin({ email, password });
   };
 
- useEffect(() => {
-  const saveLoginSession = async () => {
-    if (result.status === "fulfilled") {
-      try {
-        const { localId, email } = result.data;
+  useEffect(() => {
+    const saveLoginSession = async () => {
+      if (result.status === "fulfilled") {
+        try {
+          const { localId, email } = result.data;
 
-        
-        if (persistSession) {
-          await saveSession(localId, email);
-        } else {
-          await clearSession();
+          if (persistSession) {
+            await saveSession(localId, email);
+          } else {
+            await clearSession();
+          }
+
+          dispatch(setUserEmail(email));
+          dispatch(setLocalId(localId));
+        } catch (error) {
+          console.log("Error al guardar sesión:", error);
         }
-
-        
-        dispatch(setUserEmail(email));
-        dispatch(setLocalId(localId));
-      } catch (error) {
-        console.log("Error al guardar sesión:", error);
+      } else if (result.status === "rejected") {
+        console.log("Hubo un error al iniciar sesión");
       }
-    } else if (result.status === "rejected") {
-      console.log("Hubo un error al iniciar sesión");
-    }
-  };
+    };
 
-  saveLoginSession();
-}, [result]);
+    saveLoginSession();
+  }, [result]);
 
   return (
     <View style={styles.container}>

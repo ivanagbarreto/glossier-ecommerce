@@ -14,6 +14,11 @@ import { addItemToCart } from "../../store/slices/cartSlice";
 import { useState } from "react";
 import AccordionItem from "../../components/AcordionItem";
 import ProductImages from "../../components/ProductImages";
+
+
+
+
+
 const ProductDetail = () => {
   const product = useSelector((state) => state.shopReducer.selectedProduct);
 
@@ -149,6 +154,12 @@ const ProductDetail = () => {
           </View>
         </View>
       </Modal>
+
+   
+
+
+
+
     </ScrollView>
   );
 };
@@ -160,6 +171,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginVertical: 16,
     backgroundColor: "#f9f9f9",
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "center",
+    alignItems: "center",
   },
   textBrand: {
     color: colors.grisOscuro,
