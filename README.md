@@ -37,7 +37,7 @@ Desarrollada con **React Native**
 ## Instalación 
 1. **Clonar el repositorio**
 ```bash
-git clone
+git clone https://github.com/ivanagbarreto/glossier-ecommerce.git
 ```
 2. **Instalar dependencias**
 ```bash
