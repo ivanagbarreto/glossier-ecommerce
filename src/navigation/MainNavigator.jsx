@@ -48,8 +48,8 @@ const MainNavigator = () => {
  if (checkSession) {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Image source={require('../../assets/ribbon.png')} style={{ width: 30, height: 30 }} />
-                <ActivityIndicator size="large" color={colors.cobaltBlue} />
+                
+                <ActivityIndicator size="large" color={colors.lightPink} />
             </View>
         );
     }

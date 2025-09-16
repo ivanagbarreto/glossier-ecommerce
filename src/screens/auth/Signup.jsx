@@ -60,7 +60,7 @@ const Signup = () => {
 
   return (
     <View style={styles.gradient}>
-      <Text style={styles.title}>Fashion</Text>
+      <Text style={styles.title}>glossier</Text>
       <Text style={styles.subTitle}>Registrate</Text>
 
       <View style={styles.inputContainer}>

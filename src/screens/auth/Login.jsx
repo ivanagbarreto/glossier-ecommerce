@@ -55,7 +55,7 @@ const LoginScreen = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Fashion</Text>
+      <Text style={styles.title}>Glossier</Text>
       <Text style={styles.subTitle}>Inicia sesión</Text>
       <View style={styles.inputContainer}>
         <TextInput

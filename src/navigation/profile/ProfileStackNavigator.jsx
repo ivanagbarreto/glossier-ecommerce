@@ -10,7 +10,7 @@ const ProfileStackNavigator = () => {
     <Stack.Navigator
       initialRouteName="Perfil"
       screenOptions={{
-        header: ({route})=>(<Header title="Fashion" 
+        header: ({route})=>(<Header title="Glossier" 
           subtitle="Perfil"
           />)
       }}

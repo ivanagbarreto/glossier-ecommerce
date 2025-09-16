@@ -155,11 +155,6 @@ const ProductDetail = () => {
         </View>
       </Modal>
 
-   
-
-
-
-
     </ScrollView>
   );
 };

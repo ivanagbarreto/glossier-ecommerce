@@ -1,6 +1,6 @@
 # Fashion E-commerce de Ropa Femenina
 
-Aplicación móvil de e-commerce enfocada en ropa femenina.  
+GLOSSIER Aplicación móvil de e-commerce enfocada en ropa femenina.  
 Desarrollada con **React Native** 
 
 ---
@@ -18,7 +18,7 @@ Desarrollada con **React Native**
 -  Redux Toolkit.  
 -  Firebase (Autenticación).  
 -  React Navigation.  
--  Styled Components.  
+
 
 ---
 
